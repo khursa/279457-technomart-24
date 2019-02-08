@@ -78,7 +78,6 @@
       <!-- END HEADER -->
 
       <!-- MAIN -->
-
       <!-- BANNER -->
       <main class="main">
         <div class="banner">
@@ -250,14 +249,30 @@
               </h1>
               <div class="perforators__offers">
                 <aside class="filter">
+                  <div class="filter__title"> 
+                    ФИЛЬТР:
+                  </div>
                   <form 
                     action="#"
                     method="post"
                     >
-                    <!-- Здесь будет форма фильтра -->
+                    <fieldset class="fieldset">
+                      <legend class="filter__name">
+                          ЦЕНА:
+                      </legend>
+                      <div class="price-range">
+                        <input type="range" min="0" max="30000" step="10" value="25550">
+                        <p>
+                          <output name="min-result">0</output>
+                          <span>-</span>
+                          <output name="max-result">30000</output>
+                        </p>
+                      </div>
+                      
+                    </fieldset>
                     <hr>                   
                     <fieldset class="fieldset">
-                      <legend class="filter__title">
+                      <legend class="filter__name">
                           ПРОИЗВОДИТЕЛИ:
                       </legend>
                       <ul>
@@ -332,7 +347,7 @@
                     </fieldset>
                     <hr>
                     <fieldset class="fieldset">
-                        <legend class="filter__title">
+                        <legend class="filter__name">
                             ПИТАНИЕ:
                         </legend>
                         <ul>
@@ -371,7 +386,26 @@
                   </form>
                 </aside>
                 <div>
-                  <!-- Здесь будет форма cортировки -->
+                  <div class="sorting">
+                    <span class="sorting__title">
+                        СОРТИРОВКА:
+                    </span>
+                    <button class="sorting-by-price">
+                        ПО ЦЕНЕ
+                    </button>
+                    <button class="sorting-by-type">
+                        ПО ТИПУ
+                    </button>
+                    <button class="sorting-by-functional">
+                        ПО ФУНКЦИОНАЛУ
+                    </button>
+                    <button class="sorting-up">
+                        &#9650;
+                    </button>
+                    <button class="sorting-down">
+                        &#9660;
+                    </button>
+                  </div>
                   <div class="card-product">
                     <div class="card-product__row">
                       <article class="card-product__cell">
@@ -650,13 +684,53 @@
                             </article>
                         </div>
                     </div>
+                    <p class="page-switch">
+                        <a 
+                          class="page"
+                          href="#"
+                          >
+                          1
+                        </a>
+                        <a 
+                          class="page"
+                          href="#"
+                          >
+                          2
+                        </a>
+                        <a 
+                          class="page"
+                          href="#"
+                          >
+                          3
+                        </a>
+                        <a 
+                          class="page"
+                          href="#"
+                          >
+                          СЛЕДУЮЩАЯ
+                        </a>
+                    </p>
                   </div>
                 </div>
               </div>
           </div>
-      <!-- END PERFORATORS -->
+        <!-- END PERFORATORS -->
 
-        <!-- Здесь будет статья о перфораторах -->
+        <!-- INFO -->
+        <div class="info">
+          <h3 class="info__title">
+              ПАРА СЛОВ О ПЕРФОРАТОРАХ
+          </h3>
+          <p class="info__description">
+              Перфоратор — универсальный строительный инструмент. 
+              Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+              Существуют электромеханические и пневматические перфораторы. 
+              Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+              В ассортиментном ряду есть выбор «трехрежимников»: 
+              в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
+        <!-- END INFO -->
       </main>
       <!-- END MAIN -->
 
