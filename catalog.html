@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт - Каталог</title>
+  </head>
+  <body>
+    <div class="main-wrap">
+      <!-- HEADER -->
+      <header class="main-header">
+        <div class="container main-header__container">
+          <div class="main-header__block--left">
+              <a 
+                class="main-logo"
+                href="index.html"
+                >
+                <img 
+                  class="main-logo__img" 
+                  src="http://placehold.it/110x18"
+                  alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
+                  >
+              </a>
+              <div class="search">
+                <img 
+                  class="search__icon"
+                  src="http://placehold.it/17x17" 
+                  alt="Иконка поиска (увеличительное стекло)"
+                  >
+                <input 
+                  class="search__field" 
+                  placeholder="Поиск:"
+                  type="search"   
+                  >
+              </div>
+            </div>
+            <div class="main-header__block--right">
+              <a 
+                class="bookmark"
+                href="bookmark.html"
+                >
+                <img 
+                class="bookmark__icon"
+                src="http://placehold.it/14x16" 
+                alt="Иконка закладок (книжная закладка)"
+                >
+                <span class="bookmark__text">
+                    Закладки: 
+                </span>
+                <span class="bookmark__count">
+                  0
+                </span>
+              </a>
+              <a 
+                class="cart"
+                href="cart.html"
+                >
+                <img 
+                class="cart__icon"
+                src="http://placehold.it/15x15" 
+                alt="Иконка корзины (корзина для покупок)"
+                >
+                <span class="cart__text">
+                    Корзина: 
+                </span>
+                <span class="cart__count">
+                  0
+                </span>
+              </a>
+              <a 
+              class="order"
+              href="order.html"
+              >
+              Оформить заказ
+            </a>
+            </div>
+        </div>
+      </header>
+      <!-- END HEADER -->
+
+      <!-- MAIN -->
+
+      <!-- BANNER -->
+      <main class="main">
+        <div class="banner">
+          <div class="container">
+            <div class="banner-left">
+              <p class="banner-left__title">
+                  Интернет-магазин
+                  <br>
+                  строительных материалов
+                  <br>
+                  и инструментов для ремонта
+              </p>
+            </div>
+            <div class="banner-center">
+              <address class="banner-center">
+                <p class="banner-center__tel">
+                  <a
+                  class="banner-center__link"
+                  href="tel:+78125550555"
+                  title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
+                  >
+                    <img 
+                    class="banner-center__images"
+                    src="http://placehold.it/19x19" 
+                    alt="Иконка телефонной трубки"
+                    >
+                    +7 (812) 555-05-55
+                  </a>
+                </p>
+                <p class="banner-center__address">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                </p>
+              </address>
+            </div>
+            <div class="banner-right">
+              <div>
+                <a href="profile.html">
+                  <img 
+                    src="http://placehold.it/20x18" 
+                    alt="Иконка пользователя"
+                    >
+                  Равшан Джамшутович
+                </a>
+                <a href="logout.html">
+                  <img 
+                    src="http://placehold.it/20x17" 
+                    alt="Иконка 'выйти' (стрелка вправо)"
+                  >
+                </a>
+              </div>
+              <ul class="userlinks__list">
+                <li class="userlinks__item">
+                  <a 
+                    class="userlinks__link"
+                    >
+                    Мои заказы
+                  </a>
+                  <li class="userlinks__item">
+                    <a 
+                      class="userlinks__link"
+                      >
+                      Личный кабинет
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- NAVIGATION -->
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="index.html"
+              >
+              Главная
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="catalog.html"
+              >
+              Каталог
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="news.html"
+              >
+              Новости
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="offers.html"
+              >
+              Спецпредложения
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="delivery.html"
+              >
+              Доставка
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="contacts.html"
+              >
+              Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- END NAVIGATION -->        
+      <!-- END BANNER -->
+
+      <!-- PERFORATORS -->
+        <div class="perforators">
+          <div class="container">
+            <div class="path">
+                <ul class="path__list">
+                  <li class="path__item">
+                    <a  
+                      class="path__link" 
+                      href="index.html"
+                      >
+                      <img 
+                        src="http://placehold.it/14x12" 
+                        alt="Иконка домашней страницы (домик)"
+                        >
+                    </a>
+                  </li>
+                  <li class="path__item">
+                    <a  
+                      class="path__link" 
+                      href="catalog.html"
+                      >
+                      Каталог
+                    </a>
+                  </li>
+                  <li class="path__item">
+                    <a  
+                      class="path__link" 
+                      href="tools.html"
+                      >
+                      Инструмент
+                    </a>
+                  </li>
+                  <li class="path__item">
+                    <a  
+                      class="path__link" 
+                      href="perforators.html"
+                      >
+                      Перфораторы
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="product-title">
+                  Перфораторы
+              </h1>
+              <div class="perforators__offers">
+                <aside class="filter">
+                  <form 
+                    action="#"
+                    method="post"
+                    >
+                    <!-- Здесь будет форма фильтра -->
+                    <hr>                   
+                    <fieldset class="fieldset">
+                      <legend class="filter__title">
+                          ПРОИЗВОДИТЕЛИ:
+                      </legend>
+                      <ul>
+                        <li>
+                            <input 
+                            type="checkbox"
+                            name="bosch"
+                            checked
+                            id="filter-bosch"
+                            >
+                            <label 
+                            class="manufacturer__name"
+                            for="filter-bosch"
+                            >
+                            BOSCH
+                          </label>
+                        </li>
+                        <li>
+                          <input 
+                            type="checkbox"
+                            name="interskol"
+                            id="filter-interskol"
+                            >
+                            <label 
+                            class="manufacturer__name"
+                            for="filter-interskol"
+                            >
+                            ИНТЕРСКОЛ
+                          </label>
+                        </li>
+                        <li>
+                          <input 
+                            type="checkbox"
+                            name="makita"
+                            checked
+                            id="filter-makita"
+                            >
+                            <label 
+                            class="manufacturer__name"
+                            for="filter-makita"
+                            >
+                            MAKIta
+                          </label>
+                        </li>
+                        <li>
+                          <input 
+                            type="checkbox"
+                            name="dewalt"
+                            id="filter-dewalt"
+                            >
+                            <label 
+                            class="manufacturer__name"
+                            for="filter-dewalt"
+                            >
+                              Dewalt
+                          </label>
+                        </li>
+                        <li>
+                          <input 
+                            type="checkbox"
+                            name="hitachi"
+                            id="filter-hitachi"
+                            >
+                            <label 
+                              class="manufacturer__name"                              
+                              for="filter-hitachi"
+                              >
+                              Hitachi
+                            </label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                    <hr>
+                    <fieldset class="fieldset">
+                        <legend class="filter__title">
+                            ПИТАНИЕ:
+                        </legend>
+                        <ul>
+                          <li>
+                              <input 
+                              type="checkbox"
+                              name="rechargeable"
+                              checked
+                              id="filter-rechargeable"
+                              >
+                              <label 
+                              class="power__type"
+                              for="filter-rechargeable"
+                              >
+                              Аккумуляторные
+                            </label>
+                          </li>
+                          <li>
+                            <input 
+                              type="checkbox"
+                              name="network"
+                              id="filter-network"
+                              >
+                              <label 
+                              class="power__type"
+                              for="filter-network"
+                              >
+                              Сетевые
+                            </label>
+                          </li>
+                        </ul>
+                      </fieldset>
+                    <button class="filter__btn">
+                        ПОКАЗАТЬ
+                    </button>
+                  </form>
+                </aside>
+                <div>
+                  <!-- Здесь будет форма cортировки -->
+                  <div class="card-product">
+                    <div class="card-product__row">
+                      <article class="card-product__cell">
+                        <span>new</span>
+                        <div class="card-product__btn">
+                          <img 
+                            class="card-product__images"
+                            src="http://placehold.it/218x170" 
+                            alt=""
+                          >
+                          <button class="card-product__btn--buy">
+                            <img 
+                              src="http://placehold.it/15x15" 
+                              alt="Иконка корзины для покупок"
+                              >
+                            Купить
+                          </button>
+                          <button class="card-product__btn--to-bookmark">
+                              В закладки
+                          </button>
+                          </div>
+                          <h2>
+                            Перфоратор BOSCH
+                            <br>
+                            BFG 3000
+                          </h2>
+                          <p class="old-price">
+                            22500 Р.
+                          </p>
+                          <p class="new-price">
+                            15500 Р.
+                          </p>
+                        </article>
+                        <article class="card-product__cell">
+                          <span>new</span>
+                          <div class="card-product__btn">
+                            <img 
+                              class="card-product__images"
+                              src="http://placehold.it/218x170" 
+                              alt=""
+                            >
+                            <button class="card-product__btn--buy">
+                              <img 
+                                src="http://placehold.it/15x15" 
+                                alt="Иконка корзины для покупок"
+                                >
+                              Купить
+                            </button>
+                            <button class="card-product__btn--to-bookmark">
+                                В закладки
+                            </button>
+                            </div>
+                            <h2>
+                              Перфоратор BOSCH
+                              <br>
+                              BFG 6000
+                            </h2>
+                            <p class="old-price">
+                              30500 Р.
+                            </p>
+                            <p class="new-price">
+                              25500 Р.
+                            </p>
+                          </article>
+                          <article class="card-product__cell">
+                            <span>new</span>
+                            <div class="card-product__btn">
+                              <img 
+                                class="card-product__images"
+                                src="http://placehold.it/218x170" 
+                                alt=""
+                              >
+                              <button class="card-product__btn--buy">
+                                <img 
+                                  src="http://placehold.it/15x15" 
+                                  alt="Иконка корзины для покупок"
+                                  >
+                                Купить
+                              </button>
+                              <button class="card-product__btn--to-bookmark">
+                                  В закладки
+                              </button>
+                              </div>
+                              <h2>
+                                Перфоратор BOSCH
+                                <br>
+                                BFG 2000
+                              </h2>
+                              <p class="new-price">
+                                12500 Р.
+                              </p>
+                          </article>
+                      </div>
+                      <div class="card-product__row">
+                        <article class="card-product__cell">
+                          <span>new</span>
+                          <div class="card-product__btn">
+                            <img 
+                              class="card-product__images"
+                              src="http://placehold.it/218x170" 
+                              alt=""
+                            >
+                            <button class="card-product__btn--buy">
+                              <img 
+                                src="http://placehold.it/15x15" 
+                                alt="Иконка корзины для покупок"
+                                >
+                              Купить
+                            </button>
+                            <button class="card-product__btn--to-bookmark">
+                                В закладки
+                            </button>
+                            </div>
+                            <h2>
+                              Перфоратор BOSCH
+                              <br>
+                              BFG 3000
+                            </h2>
+                            <p class="old-price">
+                              22500 Р.
+                            </p>
+                            <p class="new-price">
+                              15500 Р.
+                            </p>
+                          </article>
+                          <article class="card-product__cell">
+                            <span>new</span>
+                            <div class="card-product__btn">
+                              <img 
+                                class="card-product__images"
+                                src="http://placehold.it/218x170" 
+                                alt=""
+                              >
+                              <button class="card-product__btn--buy">
+                                <img 
+                                  src="http://placehold.it/15x15" 
+                                  alt="Иконка корзины для покупок"
+                                  >
+                                Купить
+                              </button>
+                              <button class="card-product__btn--to-bookmark">
+                                  В закладки
+                              </button>
+                              </div>
+                              <h2>
+                                Перфоратор BOSCH
+                                <br>
+                                BFG 6000
+                              </h2>
+                              <p class="old-price">
+                                30500 Р.
+                              </p>
+                              <p class="new-price">
+                                25500 Р.
+                              </p>
+                            </article>
+                            <article class="card-product__cell">
+                              <span>new</span>
+                              <div class="card-product__btn">
+                                <img 
+                                  class="card-product__images"
+                                  src="http://placehold.it/218x170" 
+                                  alt=""
+                                >
+                                <button class="card-product__btn--buy">
+                                  <img 
+                                    src="http://placehold.it/15x15" 
+                                    alt="Иконка корзины для покупок"
+                                    >
+                                  Купить
+                                </button>
+                                <button class="card-product__btn--to-bookmark">
+                                    В закладки
+                                </button>
+                                </div>
+                                <h2>
+                                  Перфоратор BOSCH
+                                  <br>
+                                  BFG 2000
+                                </h2>
+                                <p class="new-price">
+                                  12500 Р.
+                                </p>
+                            </article>
+                        </div>
+                      <div class="card-product__row">
+                        <article class="card-product__cell">
+                          <span>new</span>
+                          <div class="card-product__btn">
+                            <img 
+                              class="card-product__images"
+                              src="http://placehold.it/218x170" 
+                              alt=""
+                            >
+                            <button class="card-product__btn--buy">
+                              <img 
+                                src="http://placehold.it/15x15" 
+                                alt="Иконка корзины для покупок"
+                                >
+                              Купить
+                            </button>
+                            <button class="card-product__btn--to-bookmark">
+                                В закладки
+                            </button>
+                            </div>
+                            <h2>
+                              Перфоратор BOSCH
+                              <br>
+                              BFG 3000
+                            </h2>
+                            <p class="old-price">
+                              22500 Р.
+                            </p>
+                            <p class="new-price">
+                              15500 Р.
+                            </p>
+                          </article>
+                          <article class="card-product__cell">
+                            <span>new</span>
+                            <div class="card-product__btn">
+                              <img 
+                                class="card-product__images"
+                                src="http://placehold.it/218x170" 
+                                alt=""
+                              >
+                              <button class="card-product__btn--buy">
+                                <img 
+                                  src="http://placehold.it/15x15" 
+                                  alt="Иконка корзины для покупок"
+                                  >
+                                Купить
+                              </button>
+                              <button class="card-product__btn--to-bookmark">
+                                  В закладки
+                              </button>
+                              </div>
+                              <h2>
+                                Перфоратор BOSCH
+                                <br>
+                                BFG 6000
+                              </h2>
+                              <p class="old-price">
+                                30500 Р.
+                              </p>
+                              <p class="new-price">
+                                25500 Р.
+                              </p>
+                            </article>
+                            <article class="card-product__cell">
+                              <span>new</span>
+                              <div class="card-product__btn">
+                                <img 
+                                  class="card-product__images"
+                                  src="http://placehold.it/218x170" 
+                                  alt=""
+                                >
+                                <button class="card-product__btn--buy">
+                                  <img 
+                                    src="http://placehold.it/15x15" 
+                                    alt="Иконка корзины для покупок"
+                                    >
+                                  Купить
+                                </button>
+                                <button class="card-product__btn--to-bookmark">
+                                    В закладки
+                                </button>
+                                </div>
+                                <h2>
+                                  Перфоратор BOSCH
+                                  <br>
+                                  BFG 2000
+                                </h2>
+                                <p class="new-price">
+                                  12500 Р.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      <!-- END PERFORATORS -->
+
+        <!-- Здесь будет статья о перфораторах -->
+      </main>
+      <!-- END MAIN -->
+
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="main-footer__top">
+          <div class="container">
+            <div  class="main-footer__top--logo">
+              <a 
+                class="footer-logo"
+                href="index.html"
+                >
+                <img 
+                  class="footer-logo__img" 
+                  src="http://placehold.it/138x23"
+                  alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
+                  >
+              </a>
+              <nav class="footer-navigation-top">
+                <ul class="footer-navigation-top__list">
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="company.html"
+                        >
+                        Компания
+                      </a>
+                    </li>
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="news.html"
+                        >
+                        Новости
+                      </a>
+                    </li>
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="catalog.html"
+                        >
+                        Каталог
+                      </a>
+                    </li>
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="delivery.html"
+                        >
+                        Доставка
+                      </a>
+                    </li>
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="contacts.html"
+                        >
+                        Контакты
+                      </a>
+                    </li>
+                </ul>
+              </nav>
+            </div>
+            <div  class="main-footer__top--address">       
+              <address>
+                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                  <br>
+                  <a
+                class="banner-center__link"
+                href="tel:+78125550555"
+                title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
+                >
+                  +7 (812) 555-05-55
+                </a>
+              </address>
+              <nav class="footer-navigation-bottom">
+                <ul class="footer-navigation-bottom__list">
+                    <li class="footer-navigation-bottom__item">
+                      <a 
+                        class="footer-navigation-bottom__link"
+                        href="materials.html"
+                        >
+                        Материалы
+                      </a>
+                    </li>
+                    <li class="footer-navigation-bottom__item">
+                      <a 
+                        class="footer-navigation-bottom__link"
+                        href="equipment.html"
+                        >
+                        Техника
+                      </a>
+                    </li>
+                    <li class="footer-navigation-bottom__item">
+                      <a 
+                        class="footer-navigation-bottom__link"
+                        href="tools.html"
+                        >
+                        Инструмент
+                      </a>
+                    </li>
+                    <li class="footer-navigation-bottom__item">
+                      <a 
+                        class="footer-navigation-bottom__link"
+                        href="offers.html"
+                        >
+                        Спецпредложения
+                      </a>
+                    </li>
+                  </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer__bottom">
+          <div class="container">
+            <p class="main-footer__copyright--left">
+                &#169; 2010–2019 Компания «Техномарт»
+                <br>
+                Все права защищены
+            </p>
+            <ul>
+              <li>
+                <a 
+                class="social_button"
+                href="https://vk.com/"
+                >
+                  Вконтакте
+                </a>
+              </li>
+              <li>
+                <a 
+                class="social_button"
+                href="https://www.facebook.com/"
+                >
+                  Фейсбук
+                </a>
+              </li>
+              <li>
+                <a 
+                class="social_button"
+                href="https://www.instagram.com/"
+                >
+                  Инстаграм
+                </a>
+              </li>
+            </ul>
+            <div class="main-footer__copyright--right">
+              <p class="feedback">
+                  Обратная связь:
+                  <br>
+                  <a
+                  class="feedback__link"
+                  href="mailto:mail@htmlacademy.ru"
+                  title="Написать"
+                  >
+                  mail@htmlacademy.ru
+                </a>
+                  
+              </p>              
+              <p class="developed">
+                  Разработано —
+                  <br>
+                  <a 
+                    class="developed__link"
+                    href="https://htmlacademy.ru/intensive/htmlcss"
+                    target="_blank"
+                    >
+                      htmlacademy.ru
+                  </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- END FOOTER -->
+    </div>
+  </body>
+</html>
+
+

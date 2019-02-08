@@ -5,8 +5,426 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <div class="main-wrap">
+      <!-- HEADER -->
+      <header class="main-header">
+        <div class="container main-header__container">
+          <div class="main-header__block--left">
+              <a 
+                class="main-logo"
+                href="index.html"
+                >
+                <img 
+                  class="main-logo__img" 
+                  src="http://placehold.it/110x18"
+                  alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
+                  >
+              </a>
+              <div class="search">
+                <img 
+                  class="search__icon"
+                  src="http://placehold.it/17x17" 
+                  alt="Иконка поиска (увеличительное стекло)"
+                  >
+                <input 
+                  class="search__field" 
+                  placeholder="Поиск:"
+                  type="search"   
+                  >
+              </div>
+            </div>
+            <div class="main-header__block--right">
+              <a 
+                class="bookmark"
+                href="bookmark.html"
+                >
+                <img 
+                class="bookmark__icon"
+                src="http://placehold.it/14x16" 
+                alt="Иконка закладок (книжная закладка)"
+                >
+                <span class="bookmark__text">
+                    Закладки: 
+                </span>
+                <span class="bookmark__count">
+                  0
+                </span>
+              </a>
+              <a 
+                class="cart"
+                href="cart.html"
+                >
+                <img 
+                class="cart__icon"
+                src="http://placehold.it/15x15" 
+                alt="Иконка корзины (корзина для покупок)"
+                >
+                <span class="cart__text">
+                    Корзина: 
+                </span>
+                <span class="cart__count">
+                  0
+                </span>
+              </a>
+              <a 
+              class="order"
+              href="order.html"
+              >
+              Оформить заказ
+            </a>
+            </div>
+        </div>
+      </header>
+      <!-- END HEADER -->
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <!-- MAIN -->
 
+      <!-- BANNER -->
+      <main class="main">
+        <div class="banner">
+          <div class="container">
+            <div class="banner-left">
+              <h1 class="banner-left__title">
+                  Интернет-магазин
+                  <br>
+                  строительных материалов
+                  <br>
+                  и инструментов для ремонта
+              </h1>
+            </div>
+            <div class="banner-center">
+              <address class="banner-center">
+                <p class="banner-center__tel">
+                  <a
+                  class="banner-center__link"
+                  href="tel:+78125550555"
+                  title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
+                  >
+                    <img 
+                    class="banner-center__images"
+                    src="http://placehold.it/19x19" 
+                    alt="Иконка телефонной трубки"
+                    >
+                    +7 (812) 555-05-55
+                  </a>
+                </p>
+                <p class="banner-center__address">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                </p>
+              </address>
+            </div>
+            <div class="banner-right">
+              <ul class="banner-right__list">
+                <li class="banner-right__item">
+                  <button class="banner-right__button">
+                    <img 
+                    class="banner-right__icon"
+                    src="http://placehold.it/20x17" 
+                    alt="Иконка входа (стрелка вперед (вправо))"
+                    >
+                      Войти
+                  </button>
+                </li>
+                <li class="banner-right__item">
+                  <button class="banner-right__button">
+                      Регистрация
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="index.html"
+              >
+              Главная
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="catalog.html"
+              >
+              Каталог
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="news.html"
+              >
+              Новости
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="offers.html"
+              >
+              Спецпредложения
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="delivery.html"
+              >
+              Доставка
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="contacts.html"
+              >
+              Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- END NAVIGATION -->        
+      <!-- END BANNER -->
+
+        <!-- Здесь будут блоки 'Категории', 'Популярные товары', 'Сервисы' -->
+
+        <!-- ABOUT -->
+        <section class="about">
+          <div class="container">
+            <div class="company">
+              <h2 class="company__title">
+                КОМПАНИЯ «Техномарт»
+              </h2>
+              <p class="company__description">
+                Настоящий мужской шоппинг начинается здесь! 
+                Огромный выбор товаров для 
+                ремонта и строительства не оставит равнодушными 
+                любителей сэкономить на гастарбайтерах.
+              </p>
+              <p class="company__description">             
+                Мы можем доставить ваш товар в самые отдаленные точки России!
+                Техномарт работает со многими транспортными компаниями:  
+              </p>
+              <ul class="company__list">
+                <li class="company__item">
+                  Деловые линии
+                </li>
+                <li class="company__item">
+                  Автотрейдинг
+                </li>
+                <li class="company__item">
+                  ЖелДорЭкспедиция
+                </li>
+              </ul>
+              <button class="company__btn">
+                Подробнее о компании
+              </button>
+            </div>
+            <div class="contacts">
+              <h2 class="contacts__title">
+                КОНТАКТЫ
+              </h2>
+              <p  class="contacts__text">
+                Вы можете забрать товар сами, 
+                заехав в наш офис:
+              </p>
+              <a href="#">
+                <img 
+                  class="contacts__map"
+                  src="http://placehold.it/300x158" 
+                  alt="Расположение компании Техномарт на карте"
+                >
+              </a>
+              <button class="contacts__btn">
+                  Заблудились? НапиШИТЕ НАМ!
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- END ABOUT -->
+      </main>
+      <!-- END MAIN -->
+
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="main-footer__top">
+          <div class="container">
+            <div  class="main-footer__top--logo">
+              <a 
+                class="footer-logo"
+                href="index.html"
+                >
+                <img 
+                  class="footer-logo__img" 
+                  src="http://placehold.it/138x23"
+                  alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
+                  >
+              </a>
+              <nav class="footer-navigation-top">
+                <ul class="footer-navigation-top__list">
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="company.html"
+                        >
+                        Компания
+                      </a>
+                    </li>
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="news.html"
+                        >
+                        Новости
+                      </a>
+                    </li>
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="catalog.html"
+                        >
+                        Каталог
+                      </a>
+                    </li>
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="delivery.html"
+                        >
+                        Доставка
+                      </a>
+                    </li>
+                    <li class="footer-navigation-top__item">
+                      <a 
+                        class="footer-navigation-top__link"
+                        href="contacts.html"
+                        >
+                        Контакты
+                      </a>
+                    </li>
+                </ul>
+              </nav>
+            </div>
+            <div  class="main-footer__top--address">       
+              <address>
+                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                  <br>
+                  <a
+                class="banner-center__link"
+                href="tel:+78125550555"
+                title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
+                >
+                  +7 (812) 555-05-55
+                </a>
+              </address>
+              <nav class="footer-navigation-bottom">
+                <ul class="footer-navigation-bottom__list">
+                    <li class="footer-navigation-bottom__item">
+                      <a 
+                        class="footer-navigation-bottom__link"
+                        href="materials.html"
+                        >
+                        Материалы
+                      </a>
+                    </li>
+                    <li class="footer-navigation-bottom__item">
+                      <a 
+                        class="footer-navigation-bottom__link"
+                        href="equipment.html"
+                        >
+                        Техника
+                      </a>
+                    </li>
+                    <li class="footer-navigation-bottom__item">
+                      <a 
+                        class="footer-navigation-bottom__link"
+                        href="tools.html"
+                        >
+                        Инструмент
+                      </a>
+                    </li>
+                    <li class="footer-navigation-bottom__item">
+                      <a 
+                        class="footer-navigation-bottom__link"
+                        href="offers.html"
+                        >
+                        Спецпредложения
+                      </a>
+                    </li>
+                  </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer__bottom">
+          <div class="container">
+            <p class="main-footer__copyright--left">
+                &#169; 2010–2019 Компания «Техномарт»
+                <br>
+                Все права защищены
+            </p>
+            <ul>
+              <li>
+                <a 
+                class="social_button"
+                href="https://vk.com/"
+                >
+                  Вконтакте
+                </a>
+              </li>
+              <li>
+                <a 
+                class="social_button"
+                href="https://www.facebook.com/"
+                >
+                  Фейсбук
+                </a>
+              </li>
+              <li>
+                <a 
+                class="social_button"
+                href="https://www.instagram.com/"
+                >
+                  Инстаграм
+                </a>
+              </li>
+            </ul>
+            <div class="main-footer__copyright--right">
+              <p class="feedback">
+                  Обратная связь:
+                  <br>
+                  <a
+                  class="feedback__link"
+                  href="mailto:mail@htmlacademy.ru"
+                  title="Написать"
+                  >
+                  mail@htmlacademy.ru
+                </a>
+                  
+              </p>              
+              <p class="developed">
+                  Разработано —
+                  <br>
+                  <a 
+                    class="developed__link"
+                    href="https://htmlacademy.ru/intensive/htmlcss"
+                    target="_blank"
+                    >
+                      htmlacademy.ru
+                  </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- END FOOTER -->
+    </div>
   </body>
 </html>
+
+
