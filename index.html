@@ -289,20 +289,20 @@
         </div>
         <div class="promo__row">
           <div class="promo-slider">
-            <div class="promo-slider__overlay--drill">
-              <h4 class="overlay__title">
-                  Дрели
-              </h4>
-              <p class="overlay__text">
-                Соседям на радость!
-              </p>
-            </div>
             <div class="promo-slider__overlay--perforator">
               <h4 class="overlay__title">
                 Перфораторы
               </h4>
               <p class="overlay__text">
                 Настоящие мужские игрушки
+              </p>
+            </div>
+            <div class="promo-slider__overlay--drill">
+              <h4 class="overlay__title">
+                  Дрели
+              </h4>
+              <p class="overlay__text">
+                Соседям на радость!
               </p>
             </div>
             <div class="promo-slider__btn-box">
@@ -332,6 +332,23 @@
                 >
                 ОТКРЫТЬ КАТАЛОГ
               </a>
+              <ul>
+                <li>
+                  <input 
+                    type="radio"
+                    name="slider-radiobutton"  
+                    value="drill"
+                    >
+                </li>
+                <li>
+                  <input 
+                    type="radio"
+                    name="slider-radiobutton"
+                    value="perforator"
+                    checked
+                    >
+                </li>
+              </ul>
             </div>
           </div>
           <div class="promo_double-block">
@@ -387,7 +404,6 @@
         </div>
       </section>
       <!-- END PROMO BLOCK -->
-
 
       <!-- POPULAR PRODUCTS -->
       <section class="popular-products">
@@ -559,7 +575,9 @@
             <div class="popular-manufacturers__row">
               <div class="popular-manufacturers__cell">
                 <a 
-                  class="popular-manufacturers__link">
+                  class="popular-manufacturers__link"
+                  href="bosch.html"
+                  >
                   <img 
                     class="popular-manufacturers__images"
                     src="img/manufacturers-bosch.jpg" 
@@ -572,7 +590,9 @@
               </div>
               <div class="popular-manufacturers__cell">
                 <a 
-                  class="popular-manufacturers__link">
+                  class="popular-manufacturers__link"
+                  href="makita.html"
+                  >
                   <img 
                     class="popular-manufacturers__images"
                     src="img/manufacturers-makita.jpg" 
@@ -585,7 +605,9 @@
               </div>
               <div class="popular-manufacturers__cell">
                 <a 
-                  class="popular-manufacturers__link">
+                  class="popular-manufacturers__link"
+                  href="dewalt.html"
+                  >
                   <img 
                     class="popular-manufacturers__images"
                     src="img/manufacturers-dewalt.jpg" 
@@ -598,7 +620,9 @@
               </div>
               <div class="popular-manufacturers__cell">
                 <a 
-                  class="popular-manufacturers__link">
+                  class="popular-manufacturers__link"
+                  href="interskol.html"
+                  >
                   <img 
                     class="popular-manufacturers__images"
                     src="img/manufacturers-interskol.jpg" 
@@ -613,7 +637,9 @@
             <div class="popular-manufacturers__row">
             <div class="popular-manufacturers__cell">
               <a 
-                class="popular-manufacturers__link">
+                class="popular-manufacturers__link"
+                href="hitachi.html"
+                >
                 <img 
                   class="popular-manufacturers__images"
                   src="img/manufacturers-hitachi.jpg" 
@@ -626,7 +652,9 @@
             </div>
             <div class="popular-manufacturers__cell">
               <a 
-                class="popular-manufacturers__link">
+                class="popular-manufacturers__link"
+                href="lg.html"
+                >
                 <img 
                   class="popular-manufacturers__images"
                   src="img/manufacturers-lg.jpg" 
@@ -639,7 +667,9 @@
             </div>
             <div class="popular-manufacturers__cell">
               <a 
-                class="popular-manufacturers__link">
+                class="popular-manufacturers__link"
+                href="aeg.html"
+                >
                 <img 
                   class="popular-manufacturers__images"
                   src="img/manufacturers-aeg.jpg" 
@@ -652,7 +682,9 @@
             </div>
             <div class="popular-manufacturers__cell">
               <a 
-                class="popular-manufacturers__link">
+                class="popular-manufacturers__link"
+                href="metabo.html"
+                >
                 <img 
                   class="popular-manufacturers__images"
                   src="img/manufacturers-metabo.jpg" 
@@ -804,7 +836,7 @@
               <button>
                 <img 
                   class="contacts__map"
-                  src="img/map.jpg" 
+                  src="img/map-small.jpg" 
                   width="300"
                   height="158"
                   alt="Расположение компании Техномарт на карте"
@@ -830,7 +862,105 @@
               </button>
 
               <!-- POPUP WRITE US -->
-              
+              <div class="popup-write-us">
+                  <button  class="popup-write-us__close-btn">
+                    <img 
+                    class="popup-write-us__close-btn-img"
+                    src="img/svg/icon-close.svg" 
+                    width="21"
+                    height="21"
+                    alt="Иконка 'Закрыть' (красный крестик)"
+                    >
+                  </button>
+                   
+
+
+
+
+
+                  <form 
+                    class="feedback-form"
+                    action="https://echo.htmlacademy.ru"
+                    method="post"
+                    >
+                    <fieldset class="fieldset">
+                      <legend class="visually-hidden">
+                          Форма обратной связи
+                      </legend>
+                      <div class="user-data">
+                        <div class="user-data__name">
+                            <label 
+                              class="user-data__label"
+                              for="user-name">
+                                Ваше имя:
+                            </label>
+                            <input 
+                              class="feedback-form__user-name"
+                              id="user-name"
+                              type="text" 
+                              name="user-name"
+                              pattern="^([a-zA-Z]{2,}\s[a-zA-z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)"
+                              placeholder="Имя Фамилия"
+                              maxlength="50"
+                              minlength="2"
+                              required
+                              autofocus
+                              onClick={this.changeInputUserName.bind(this)
+                              >
+                          </div>
+                          <div class="user-data__email">
+                            <label 
+                              class="user-data__label"
+                              for="user-email"
+                              >
+                                Ваш e-mail:
+                            </label>
+                            <input 
+                              class="feedback-form__user-email"
+                              id="user-email"
+                              type="emil" 
+                              name="user-email"
+                              pattern="^\w[\w!#$%&'*+\-/=?^_`{|}~]+\.?[\w!#$%&'*+\-/=?^_`{|}~]+@\w{1,12}\.[A-z]{2,3}$"
+                              placeholder="email@example.com"
+                              maxlength="1000"
+                              minlength="3"
+                              required
+                              onClick={this.changeInputUserEmail.bind(this)
+                              >
+                          </div>
+                      </div>
+                      <div class="feedback-form__elements">
+                        <div class="textarea-wrap">
+                          <label 
+                            class="user-data__label"
+                            for="user-letter"
+                          >
+                              Текст письма:
+                          </label>
+                          <textarea 
+                            class="user-letter" 
+                            name="user-letter"  
+                            id="user-letter" 
+                            placeholder="В свободной форме"
+                            minlength="1"
+                            maxlength="1000000"
+                            required
+                            >
+                          </textarea>
+                        </div>
+                        <button class="feedback-form__btn">
+                            ОТПРАВИТЬ
+                        </button>
+                      </div>
+                    </fieldset>
+                   </form>
+
+
+
+
+
+
+                </div>              
               <!-- END POPUP WRITE US -->
 
             </div>
