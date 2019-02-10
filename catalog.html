@@ -18,6 +18,7 @@
               <a 
                 class="main-logo"
                 href="index.html"
+                aria-label="Перейти главную страницу веб-сайта ТЕХНОМАРТ"
                 >
                 <img 
                   class="main-logo__img" 
@@ -41,7 +42,8 @@
                   class="search__field"
                   id="search" 
                   placeholder="Поиск:"
-                  type="search"   
+                  type="search" 
+                  aria-label="Поиск по сайту ТЕХНОМАРТ" 
                   >
               </div>
             </div>
@@ -49,6 +51,7 @@
               <a 
                 class="bookmark"
                 href="bookmark.html"
+                aria-label="Переход на страницу с закладками на сайте ТЕХНОМАРТ"
                 >
                 <img 
                 class="bookmark__icon"
@@ -67,6 +70,7 @@
               <a 
                 class="cart"
                 href="cart.html"
+                aria-label="Переход в корзину интернет-магазина ТЕХНОМАРТ" 
                 >
                 <img 
                 class="cart__icon"
@@ -85,6 +89,7 @@
               <a 
               class="order"
               href="order.html"
+              aria-label="Добавить товар в корзину!" 
               >
               Оформить заказ
             </a>
@@ -114,6 +119,7 @@
                   class="banner-center__link"
                   href="tel:+78125550555"
                   title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
+                  aria-label="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
                   >
                     <img 
                     class="banner-center__images"
@@ -132,7 +138,11 @@
             </div>
             <div class="banner-right">
               <div>
-                <a href="profile.html">
+                <a 
+                  class="profile"
+                  href="profile.html"
+                  aria-label="Перейти на страницу Вашей учетной записи"
+                  >
                   <img 
                     src="img/svg/icon-user.svg" 
                     width="20"
@@ -141,7 +151,11 @@
                     >
                   Равшан Джамшутович
                 </a>
-                <a href="logout.html">
+                <a
+                  class="logout" 
+                  href="logout.html"
+                  aria-label="Выйти с учетной записи"
+                  >
                   <img 
                     src="img/svg/icon-logout.svg" 
                     width="20"
@@ -154,12 +168,16 @@
                 <li class="userlinks__item">
                   <a 
                     class="userlinks__link"
+                    href="user-orders.html"
+                    aria-label="Перейти на страницу со списком заказов"
                     >
                     Мои заказы
                   </a>
                   <li class="userlinks__item">
                     <a 
                       class="userlinks__link"
+                      href="personal-cabinet.html"
+                      aria-label="Перейти в личный кабинет пользователя"
                       >
                       Личный кабинет
                     </a>
@@ -168,13 +186,15 @@
             </div>
           </div>
         </div>
-        <!-- NAVIGATION -->
-        <nav class="main-navigation">
+
+       <!-- NAVIGATION -->
+       <nav class="main-navigation">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a 
                 class="main-navigation__link"
                 href="index.html"
+                aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
               >
               Главная
               </a>
@@ -183,6 +203,16 @@
               <a 
                 class="main-navigation__link"
                 href="catalog.html"
+                aria-label="Переход на страницу с информацией о компании ТЕХНОМАРТ"
+              >
+              Компания
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a 
+                class="main-navigation__link"
+                href="catalog.html"
+                aria-label="Переход на страницу каталога товаров"
               >
               Каталог
               </a>
@@ -191,6 +221,7 @@
               <a 
                 class="main-navigation__link"
                 href="news.html"
+                aria-label="Переход на новостную страницу компании ТЕХНОМАРТ "
               >
               Новости
               </a>
@@ -199,6 +230,7 @@
               <a 
                 class="main-navigation__link"
                 href="offers.html"
+                aria-label="Переход на страницу со спецпредложениями"
               >
               Спецпредложения
               </a>
@@ -207,6 +239,7 @@
               <a 
                 class="main-navigation__link"
                 href="delivery.html"
+                aria-label="Переход на страницу с описанием условий доставки"
               >
               Доставка
               </a>
@@ -215,13 +248,14 @@
               <a 
                 class="main-navigation__link"
                 href="contacts.html"
+                aria-label="Переход на страницу с контактной информацией"
               >
               Контакты
               </a>
             </li>
           </ul>
         </nav>
-        <!-- END NAVIGATION -->        
+        <!-- END NAVIGATION -->         
       <!-- END BANNER -->
 
       <!-- PERFORATORS -->
@@ -233,6 +267,7 @@
                     <a  
                       class="path__link" 
                       href="index.html"
+                      aria-label="Перейи на главную страницу веб-сайта"
                       >
                       <img 
                         src="img/svg/icon-home.svg" 
@@ -246,6 +281,7 @@
                     <a  
                       class="path__link" 
                       href="catalog.html"
+                      aria-label="Перейти на станицу каталога товаров"
                       >
                       Каталог
                     </a>
@@ -254,6 +290,7 @@
                     <a  
                       class="path__link" 
                       href="tools.html"
+                      aria-label="Перейти на страницу категории товаров Инструмент"
                       >
                       Инструмент
                     </a>
@@ -262,6 +299,7 @@
                     <a  
                       class="path__link" 
                       href="perforators.html"
+                      aria-label="Перейти на страницу товаров 'Перфораторы'"
                       >
                       Перфораторы
                     </a>
@@ -285,7 +323,14 @@
                           ЦЕНА:
                       </legend>
                       <div class="price-range">
-                        <input type="range" min="0" max="30000" step="10" value="25550">
+                        <input 
+                          type="range" 
+                          min="0" 
+                          max="35000" 
+                          step="10" 
+                          value="30000"
+                          aria-label="Фильтр товаров 'Цена'"
+                          >
                         <p>
                           <output name="min-result">0</output>
                           <span>-</span>
@@ -306,6 +351,7 @@
                             name="bosch"
                             checked
                             id="filter-bosch"
+                            aria-label="Выбрать производителя BOSCH"
                             >
                             <label 
                             class="manufacturer__name"
@@ -319,6 +365,7 @@
                             type="checkbox"
                             name="interskol"
                             id="filter-interskol"
+                            aria-label="Выбрать производителя ИНТЕРСКОЛ"
                             >
                             <label 
                             class="manufacturer__name"
@@ -332,6 +379,7 @@
                             type="checkbox"
                             name="makita"
                             checked
+                            aria-label="Выбрать производителя MAKIta"
                             id="filter-makita"
                             >
                             <label 
@@ -346,6 +394,7 @@
                             type="checkbox"
                             name="dewalt"
                             id="filter-dewalt"
+                            aria-label="Выбрать производителя Dewalt"
                             >
                             <label 
                             class="manufacturer__name"
@@ -359,6 +408,7 @@
                             type="checkbox"
                             name="hitachi"
                             id="filter-hitachi"
+                            aria-label="Выбрать производителя Hitachi"                            
                             >
                             <label 
                               class="manufacturer__name"                              
@@ -382,6 +432,7 @@
                               id="filter-rechargeable"
                               value="rechargeable"
                               checked
+                              aria-label="Выбрать перфораторы с аккумуляторным питанием"                                                          
                               >
                               <label 
                               class="power__type"
@@ -396,6 +447,7 @@
                               name="power-of-perforator"
                               id="filter-network"
                               value="network"
+                            aria-label="Выбрать перфораторы с питанием от электросети"                                                          
                               >
                               <label 
                               class="power__type"
@@ -406,7 +458,10 @@
                           </li>
                         </ul>
                       </fieldset>
-                    <button class="filter__btn">
+                    <button 
+                      class="filter__btn"
+                      aria-label="Применить установленые фильтры"
+                      >
                         ПОКАЗАТЬ
                     </button>
                   </form>
@@ -416,13 +471,22 @@
                     <span class="sorting__title">
                         СОРТИРОВКА:
                     </span>
-                    <button class="sorting-by-price">
+                    <button 
+                      class="sorting-by-price"
+                      aria-label="Отсортировать товары по цене"
+                      >
                         ПО ЦЕНЕ
                     </button>
-                    <button class="sorting-by-type">
+                    <button 
+                      class="sorting-by-type"
+                      aria-label="Отсортировать товары по типу"                      
+                      >
                         ПО ТИПУ
                     </button>
-                    <button class="sorting-by-functional">
+                    <button 
+                      class="sorting-by-functional"
+                      aria-label="Отсортировать товары по функционалу"                      
+                      >
                         ПО ФУНКЦИОНАЛУ
                     </button>
                     <button class="sorting-up-dir">
@@ -432,6 +496,7 @@
                         width="11"
                         height="10"
                         alt="Стрелка вверх"
+                        aria-label="Отсортировать товары по возрастанию"
                       >
                     </button>
                     <button class="sorting-down-dir">
@@ -441,6 +506,7 @@
                         width="11"
                         height="10"
                         alt="Стрелка вверх"
+                        aria-label="Отсортировать товары по убыванию"
                       >
                     </button>
                   </div>
@@ -456,7 +522,10 @@
                             height="170"
                              alt="Перфоратор BOSCH"
                           >
-                          <button class="card-product__btn--buy">
+                          <button 
+                            class="card-product__btn--buy"
+                            aria-label="Добавить товар в корзину!"              
+                            >
                             <img 
                               src="img/svg/icon-cart.svg" 
                               width="15"
@@ -465,7 +534,10 @@
                               >
                             Купить
                           </button>
-                          <button class="card-product__btn--to-bookmark">
+                          <button 
+                            class="card-product__btn--to-bookmark"
+                            aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"   
+                            >
                               В закладки
                           </button>
                           </div>
@@ -491,7 +563,10 @@
                               height="170"
                                alt="Перфоратор BOSCH"
                             >
-                            <button class="card-product__btn--buy">
+                            <button 
+                              class="card-product__btn--buy"
+                              aria-label="Добавить товар в корзину!"              
+                              >
                               <img 
                                 src="img/svg/icon-cart.svg" 
                                 width="15"
@@ -500,7 +575,10 @@
                                 >
                               Купить
                             </button>
-                            <button class="card-product__btn--to-bookmark">
+                            <button 
+                              class="card-product__btn--to-bookmark"
+                              aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"         
+                              >
                                 В закладки
                             </button>
                             </div>
@@ -526,7 +604,10 @@
                                 height="170"
                                  alt="Перфоратор BOSCH"
                               >
-                              <button class="card-product__btn--buy">
+                              <button 
+                                class="card-product__btn--buy"
+                                aria-label="Добавить товар в корзину!"              
+                                 >
                                 <img 
                                   src="img/svg/icon-cart.svg" 
                                   width="15"
@@ -535,7 +616,10 @@
                                   >
                                 Купить
                               </button>
-                              <button class="card-product__btn--to-bookmark">
+                              <button 
+                                class="card-product__btn--to-bookmark"
+                                aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"       
+                                >
                                   В закладки
                               </button>
                               </div>
@@ -560,7 +644,10 @@
                               height="170"
                                alt="Перфоратор BOSCH"
                             >
-                            <button class="card-product__btn--buy">
+                            <button 
+                              class="card-product__btn--buy"
+                              aria-label="Добавить товар в корзину!"             
+                              >
                               <img 
                                 src="img/svg/icon-cart.svg" 
                                 width="15"
@@ -569,7 +656,10 @@
                                 >
                               Купить
                             </button>
-                            <button class="card-product__btn--to-bookmark">
+                            <button 
+                              class="card-product__btn--to-bookmark"
+                               aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"        
+                              >
                                 В закладки
                             </button>
                             </div>
@@ -595,7 +685,10 @@
                                 height="170"
                                  alt="Перфоратор BOSCH"
                               >
-                              <button class="card-product__btn--buy">
+                              <button 
+                                class="card-product__btn--buy"
+                                aria-label="Добавить товар в корзину!"                                              
+                                >
                                 <img 
                                   src="img/svg/icon-cart.svg" 
                                   width="15"
@@ -604,7 +697,10 @@
                                   >
                                 Купить
                               </button>
-                              <button class="card-product__btn--to-bookmark">
+                              <button 
+                                class="card-product__btn--to-bookmark"
+                                aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
+                                >
                                   В закладки
                               </button>
                               </div>
@@ -630,7 +726,10 @@
                                   height="170"
                                    alt="Перфоратор BOSCH"
                                 >
-                                <button class="card-product__btn--buy">
+                                <button 
+                                  class="card-product__btn--buy"
+                                   aria-label="Добавить товар в корзину!"  
+                                  >
                                   <img 
                                     src="img/svg/icon-cart.svg" 
                                     width="15"
@@ -639,7 +738,10 @@
                                     >
                                   Купить
                                 </button>
-                                <button class="card-product__btn--to-bookmark">
+                                <button 
+                                  class="card-product__btn--to-bookmark"
+                                   aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"      
+                                  >
                                     В закладки
                                 </button>
                                 </div>
@@ -664,7 +766,10 @@
                               height="170"
                                alt="Перфоратор BOSCH"
                             >
-                            <button class="card-product__btn--buy">
+                            <button 
+                              class="card-product__btn--buy"
+                              aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
+                              >
                               <img 
                                 src="img/svg/icon-cart.svg" 
                                 width="15"
@@ -673,7 +778,10 @@
                                 >
                               Купить
                             </button>
-                            <button class="card-product__btn--to-bookmark">
+                            <button 
+                              class="card-product__btn--to-bookmark"
+                              aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
+                              >
                                 В закладки
                             </button>
                             </div>
@@ -699,7 +807,10 @@
                                 height="170"
                                  alt="Перфоратор BOSCH"
                               >
-                              <button class="card-product__btn--buy">
+                              <button 
+                                class="card-product__btn--buy"
+                                aria-label="Добавить товар в корзину!"         
+                                >
                                 <img 
                                   src="img/svg/icon-cart.svg" 
                                   width="15"
@@ -708,7 +819,10 @@
                                   >
                                 Купить
                               </button>
-                              <button class="card-product__btn--to-bookmark">
+                              <button 
+                                class="card-product__btn--to-bookmark"
+                                aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
+                                >
                                   В закладки
                               </button>
                               </div>
@@ -734,7 +848,10 @@
                                   height="170"
                                   alt="Перфоратор BOSCH"
                                 >
-                                <button class="card-product__btn--buy">
+                                <button 
+                                  class="card-product__btn--buy"
+                                  aria-label="Добавить товар в корзину!"    
+                                  >
                                   <img 
                                     src="img/svg/icon-cart.svg" 
                                     width="15"
@@ -743,7 +860,10 @@
                                     >
                                   Купить
                                 </button>
-                                <button class="card-product__btn--to-bookmark">
+                                <button 
+                                  class="card-product__btn--to-bookmark"
+                                  aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
+                                  >
                                     В закладки
                                 </button>
                                 </div>
@@ -759,7 +879,10 @@
                         </div>
                         <!-- POPUP 'ADDED PRODUCT' -->
                         <div class="popup-added-product">
-                          <button  class="popup-added-product__close-btn">
+                          <button  
+                            class="popup-added-product__close-btn"
+                            aria-label="Закрыть модальное окно"
+                            >
                             <img 
                             class="popup-added-product__close-btn-img"
                             src="img/svg/icon-close.svg" 
@@ -784,10 +907,14 @@
                             <a 
                               class="popup-added-product__button"
                               href="order.html"
+                              aria-label="Перейти на страницу оформления заказа"
                               >
                               ОФОРМИТЬ ЗАКАЗ
                             </a>
-                            <button class="popup-added-product__button">
+                            <button 
+                              class="popup-added-product__button"
+                              aria-label="Закрыть модальное окно и продолжить покупки"
+                              >
                               ПРОДОЛЖИТЬ ПОКУПКИ
                             </button>
                           </div>
@@ -797,25 +924,29 @@
                     <p class="page-switch">
                         <a 
                           class="page"
-                          href="#"
+                          href="perforator-page-1.html"
+                          aria-label="Перейти на страницу товаров № 1"
                           >
                           1
                         </a>
                         <a 
                           class="page"
-                          href="#"
+                          href="perforator-page-2.html"
+                          aria-label="Перейти на страницу товаров № 2"
                           >
                           2
                         </a>
                         <a 
                           class="page"
-                          href="#"
+                          href="perforator-page-3.html"
+                          aria-label="Перейти на страницу товаров № 3"
                           >
                           3
                         </a>
                         <a 
                           class="page"
-                          href="#"
+                          href="perforator-page-next.html"
+                          aria-label="Перейти на следующую страницу товаров"
                           >
                           СЛЕДУЮЩАЯ
                         </a>
@@ -852,6 +983,7 @@
               <a 
                 class="footer-logo"
                 href="index.html"
+                aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
                 >
                 <img 
                   class="footer-logo__img" 
@@ -861,12 +993,15 @@
                   alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
                   >
               </a>
+
+              <!-- FOOTER NAVIGATION -->
               <nav class="footer-navigation-top">
                 <ul class="footer-navigation-top__list">
                     <li class="footer-navigation-top__item">
                       <a 
                         class="footer-navigation-top__link"
                         href="company.html"
+                        aria-label="Перейти на страницу с информацией о компании ТЕХНОМАРТ"
                         >
                         Компания
                       </a>
@@ -875,6 +1010,7 @@
                       <a 
                         class="footer-navigation-top__link"
                         href="news.html"
+                        aria-label="Перейти на новостную страницу сайта"                        
                         >
                         Новости
                       </a>
@@ -883,6 +1019,7 @@
                       <a 
                         class="footer-navigation-top__link"
                         href="catalog.html"
+                        aria-label="Перейти в каталог товаров"                        
                         >
                         Каталог
                       </a>
@@ -891,6 +1028,7 @@
                       <a 
                         class="footer-navigation-top__link"
                         href="delivery.html"
+                        aria-label="Перейти на страницу с описанием условий доставки товаров"
                         >
                         Доставка
                       </a>
@@ -899,13 +1037,16 @@
                       <a 
                         class="footer-navigation-top__link"
                         href="contacts.html"
+                        aria-label="Перейти на страницу с контактной информацией"
                         >
                         Контакты
                       </a>
                     </li>
                 </ul>
               </nav>
+              <!-- END FOOTER NAVIGATION -->
             </div>
+
             <div  class="main-footer__top--address">       
               <address>
                   г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -914,16 +1055,20 @@
                 class="banner-center__link"
                 href="tel:+78125550555"
                 title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
+                aria-label="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
                 >
                   +7 (812) 555-05-55
                 </a>
               </address>
+
+              <!-- PRODUCT CATEGORY NAVIGATION -->
               <nav class="footer-navigation-bottom">
                 <ul class="footer-navigation-bottom__list">
                     <li class="footer-navigation-bottom__item">
                       <a 
                         class="footer-navigation-bottom__link"
                         href="materials.html"
+                        aria-label="Перейти на страницу с товарами в категории 'Материалы'"
                         >
                         Материалы
                       </a>
@@ -932,6 +1077,7 @@
                       <a 
                         class="footer-navigation-bottom__link"
                         href="equipment.html"
+                        aria-label="Перейти на страницу с товарами в категории 'Техника'"
                         >
                         Техника
                       </a>
@@ -940,6 +1086,7 @@
                       <a 
                         class="footer-navigation-bottom__link"
                         href="tools.html"
+                        aria-label="Перейти на страницу с товарами в категории 'Инструмент'"
                         >
                         Инструмент
                       </a>
@@ -948,12 +1095,15 @@
                       <a 
                         class="footer-navigation-bottom__link"
                         href="offers.html"
+                        aria-label="Перейти на страницу со спецпредложениями"
                         >
                         Спецпредложения
                       </a>
                     </li>
                   </ul>
               </nav>
+              <!-- END PRODUCT CATEGORY NAVIGATION -->
+
             </div>
           </div>
         </div>
@@ -969,6 +1119,8 @@
                 <a 
                 class="social_button"
                 href="https://vk.com/"
+                aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ Вконтакте"
+                target="_blank"
                 >
                   Вконтакте
                 </a>
@@ -977,6 +1129,8 @@
                 <a 
                 class="social_button"
                 href="https://www.facebook.com/"
+                aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ на Фейсбук"
+                target="_blank"
                 >
                   Фейсбук
                 </a>
@@ -985,6 +1139,8 @@
                 <a 
                 class="social_button"
                 href="https://www.instagram.com/"
+                aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ в Инстаграм"
+                target="_blank"
                 >
                   Инстаграм
                 </a>
@@ -998,6 +1154,7 @@
                   class="feedback__link"
                   href="mailto:mail@htmlacademy.ru"
                   title="Написать"
+                  aria-label="Написать на mail@htmlacademy.ru"
                   >
                   mail@htmlacademy.ru
                 </a>
@@ -1010,6 +1167,7 @@
                     class="developed__link"
                     href="https://htmlacademy.ru/intensive/htmlcss"
                     target="_blank"
+                    aria-label="Перейти на веб-сайт разработчиков"
                     >
                       htmlacademy.ru
                   </a>
