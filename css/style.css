@@ -13,8 +13,6 @@ body {
     line-height: 36px;
     font-weight: 400;
     color: #ffffff;
-
-    background-color: #ddd;
 }
 
 a {
@@ -230,8 +228,162 @@ ul {
     background-color: #1d2739;
 }
 
-/* ABOUT */
+/* PROMO BLOCK */
 
+.promo__card--materials {
+    background-color: #ffbf47;
+}
+
+.promo__card--tools {
+    background-color: #3bbce3;
+}
+
+.promo__card--equipment {
+    background-color: #dc91d8;
+}
+
+.promo__card--discount {
+    background-color: #8ed78f;
+}
+
+.promo__card--delivery {
+    background-color: #ffc047;
+}
+
+.card-content__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.card-content__link {
+    line-height: 18px;
+    text-transform: uppercase;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-content__link:hover,
+.card-content__link:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-content__link:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-slider__overlay--perforator,
+.promo-slider__overlay--drill {
+    background-color: #f9f5f0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.promo-slider__overlay--perforator {
+    background-image: url(../img/slider-perforator.jpg);
+}
+
+.promo-slider__overlay--drill {
+    background-image: url(../img/slider-drill.jpg);
+}
+
+.overlay__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.overlay__text {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.promo-slider__link,
+.popular-products__more,
+.popular-manufacturers__more,
+.company__btn,
+.contacts__btn,
+.credit__button {
+    font-size: 14px;
+    line-height: 18px;
+
+    background-color: #ee3643;
+}
+
+.promo-slider__link:hover,
+.promo-slider__link:focus,
+.popular-products__more:hover,
+.popular-products__more:focus,
+.popular-manufacturers__more:hover,
+.popular-manufacturers__more:focus,
+.company__btn:hover,
+.company__btn:focus,
+.contacts__btn:hover,
+.contacts__btn:focus,
+.credit__button:hover,
+.credit__button:focus {
+    font-size: 14px;
+    line-height: 18px;
+
+    background-color: #ca2c37;
+}
+
+.promo-slider__link:active,
+.popular-products__more:active,
+.popular-manufacturers__more:active,
+.company__btn:active,
+.contacts__btn:active,
+.credit__button:active {
+    font-size: 14px;
+    line-height: 18px;
+
+    background-color: #ba2732;
+}
+
+
+/* POPULAR PRODUCTS */
+
+.popular-products__banner,
+.popular-manufacturers__banner {
+    background-color: #f9f5f0;
+}
+
+.popular-products__cell,
+.popular-manufacturers__cell {
+    border: 1px solid #eaeaea;
+}
+
+.popular-products__cell:hover,
+.popular-products__cell:focus,
+.popular-manufacturers__cell:hover,
+.popular-manufacturers__cell:focus {       
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.popular-products__title,
+.popular-manufacturers__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+
+/* POPULAR MANUFACTURERS */
+
+.popular-manufacturers__cell:active {
+    box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+    opacity: 0.3;
+}
+
+/* SERVICES */
+
+.services {
+    background-color: #f4f7f9;
+}
+
+.services__title,
 .company__title,
 .contacts__title {
     font-family: "PT Sans", Arial, sans-serif;
@@ -240,21 +392,50 @@ ul {
     color: #000000;
 }
 
+.services__description,
 .company__description,
-.contacts__text {
+.contacts__text,
+.delivery__description,
+.warranty__description,
+.credit__description {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #000000;
 }
 
-.company__btn,
-.contacts__btn {
-    font-size: 14px;
-    line-height: 18px;
-
-    background-color: #ee3643;
+.delivery__title,
+.warranty__title,
+.credit__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #32425c;
 }
+
+.services__option {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+
+    background-color: #32425c;
+}
+
+.services__option:hover,
+.services__option:focus {
+    background-color: #293449;
+}
+
+.services__option--active {
+    color: #32425c;
+
+    background-color: #ffffff;
+}
+
+
+/* ABOUT */
+
+
 
 /* POPAP */
 
@@ -262,6 +443,110 @@ ul {
 .popup-write-us,
 .popup-added-product {
     display: none;
+}
+
+
+/* FILTER */
+
+.filter__title,
+.wrap-price-range,
+.min-result,
+.max-result,
+.between-output,
+.sorting {
+    color: #000000;
+
+    background-color: #f7f3ec;
+}
+
+.price-range:focus {
+    outline: none;
+  }
+
+.price-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+
+    background: #00ca74;
+
+    cursor: pointer;
+  }
+
+.filter__name {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.min-result,
+.max-result {
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.between-output {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.manufacturer__name,
+.power__type {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.filter__btn,
+.sorting button,
+.page {   
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+
+    background-color: transparent;
+}
+
+.sorting button {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting button:hover,
+.sorting button:focus {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.sorting button:active {
+    text-decoration: none;
+    color: #ee3643;
+}
+
+.filter__btn,
+.page  {
+    border: 1px solid #e5e5e5;
+}
+
+.page:hover,
+.page:focus  {
+    border: 1px solid #bdc6ca;
+}
+
+.page:active  {
+    border: 1px solid #ee3643;
+}
+
+#page--active {
+    color: #ffffff;
+
+    background-color: #ee3643;
 }
 
 /* PERFORATORS */
@@ -317,12 +602,20 @@ ul {
 }
 
 .card-product__btn--to-bookmark {
+    border: 3px solid #63a63e;
+
     color: #32425c;
 
     background-color: #ffffff;
 }
 
-.card-product__btn--to-bookmark {
+.card-product__btn--to-bookmark:hover,
+.card-product__btn--to-bookmark:focus {
+    border: 3px solid #32425c;
+}
+
+.card-product__btn--to-bookmark:active {
+    border: 3px solid #32425c;
     opacity: 0.3;
 }
 
@@ -513,3 +806,33 @@ ul {
 .developed__link {
     color: #ffda96;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

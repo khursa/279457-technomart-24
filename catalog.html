@@ -308,6 +308,8 @@
                   Перфораторы
               </h1>
               <div class="perforators__offers">
+
+                <!-- FILTER -->
                 <aside class="filter">
                   <div class="filter__title"> 
                     ФИЛЬТР:
@@ -320,21 +322,32 @@
                       <legend class="filter__name">
                           ЦЕНА:
                       </legend>
-                      <div class="price-range">
+                      <div class="wrap-price-range">
                         <input 
+                          class="price-range"
                           type="range" 
                           min="0" 
                           max="35000" 
                           step="10" 
                           value="30000"
                           aria-label="Фильтр товаров 'Цена'"
-                          >
-                        <p>
-                          <output name="min-result">0</output>
-                          <span>-</span>
-                          <output name="max-result">30000</output>
-                        </p>
+                          >                          
                       </div>
+                        <p>
+                          <output 
+                            class="min-result"
+                            name="min-result"
+                            >
+                            0
+                          </output>
+                          <span class="between-output">-</span>
+                          <output 
+                            class="max-result"
+                            name="max-result"
+                            >
+                            30000
+                          </output>
+                        </p>
                       
                     </fieldset>
                     <hr>                   
@@ -464,6 +477,8 @@
                     </button>
                   </form>
                 </aside>
+                <!-- END FILTER -->
+
                 <div>
                   <div class="sorting">
                     <span class="sorting__title">
@@ -922,6 +937,7 @@
                     <p class="page-switch">
                         <a 
                           class="page"
+                          id="page--active"
                           href="perforator-page-1.html"
                           aria-label="Перейти на страницу товаров № 1"
                           >
