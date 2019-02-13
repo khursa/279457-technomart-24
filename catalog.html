@@ -185,73 +185,75 @@
           </div>
 
        <!-- NAVIGATION -->
-       <nav class="main-navigation">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="index.html"
-                aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
-              >
-              Главная
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="catalog.html"
-                aria-label="Переход на страницу с информацией о компании ТЕХНОМАРТ"
-              >
-              Компания
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="catalog.html"
-                aria-label="Переход на страницу каталога товаров"
-              >
-              Каталог
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="news.html"
-                aria-label="Переход на новостную страницу компании ТЕХНОМАРТ "
-              >
-              Новости
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="offers.html"
-                aria-label="Переход на страницу со спецпредложениями"
-              >
-              Спецпредложения
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="delivery.html"
-                aria-label="Переход на страницу с описанием условий доставки"
-              >
-              Доставка
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="contacts.html"
-                aria-label="Переход на страницу с контактной информацией"
-              >
-              Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
+       <div class="container">
+        <nav class="main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="index.html"
+                  aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
+                >
+                Главная
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="catalog.html"
+                  aria-label="Переход на страницу с информацией о компании ТЕХНОМАРТ"
+                >
+                Компания
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="catalog.html"
+                  aria-label="Переход на страницу каталога товаров"
+                >
+                Каталог
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="news.html"
+                  aria-label="Переход на новостную страницу компании ТЕХНОМАРТ "
+                >
+                Новости
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="offers.html"
+                  aria-label="Переход на страницу со спецпредложениями"
+                >
+                Спецпредложения
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="delivery.html"
+                  aria-label="Переход на страницу с описанием условий доставки"
+                >
+                Доставка
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="contacts.html"
+                  aria-label="Переход на страницу с контактной информацией"
+                >
+                Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+       </div>
         <!-- END NAVIGATION --> 
       </div>        
       <!-- END BANNER -->
@@ -484,44 +486,46 @@
                     <span class="sorting__title">
                         СОРТИРОВКА:
                     </span>
-                    <button 
-                      class="sorting-by-price"
-                      aria-label="Отсортировать товары по цене"
-                      >
-                        ПО ЦЕНЕ
-                    </button>
-                    <button 
-                      class="sorting-by-type"
-                      aria-label="Отсортировать товары по типу"                      
-                      >
-                        ПО ТИПУ
-                    </button>
-                    <button 
-                      class="sorting-by-functional"
-                      aria-label="Отсортировать товары по функционалу"                      
-                      >
-                        ПО ФУНКЦИОНАЛУ
-                    </button>
-                    <button class="sorting-up-dir">
-                      <img 
-                        class="sorting-up-dir__icon"
-                        src="img/svg/icon-up-dir.svg" 
-                        width="11"
-                        height="10"
-                        alt="Стрелка вверх"
-                        aria-label="Отсортировать товары по возрастанию"
-                      >
-                    </button>
-                    <button class="sorting-down-dir">
-                      <img 
-                        class="sorting-down-dir__icon"
-                        src="img/svg/icon-down-dir.svg" 
-                        width="11"
-                        height="10"
-                        alt="Стрелка вверх"
-                        aria-label="Отсортировать товары по убыванию"
-                      >
-                    </button>
+                    <div class="sorting-btn-wrap">
+                        <button 
+                        class="sorting-by-price"
+                        aria-label="Отсортировать товары по цене"
+                        >
+                          ПО ЦЕНЕ
+                      </button>
+                      <button 
+                        class="sorting-by-type"
+                        aria-label="Отсортировать товары по типу"                      
+                        >
+                          ПО ТИПУ
+                      </button>
+                      <button 
+                        class="sorting-by-functional"
+                        aria-label="Отсортировать товары по функционалу"                      
+                        >
+                          ПО ФУНКЦИОНАЛУ
+                      </button>
+                      <button class="sorting-up-dir">
+                        <img 
+                          class="sorting-up-dir__icon"
+                          src="img/svg/icon-up-dir.svg" 
+                          width="11"
+                          height="10"
+                          alt="Стрелка вверх"
+                          aria-label="Отсортировать товары по возрастанию"
+                        >
+                      </button>
+                      <button class="sorting-down-dir">
+                        <img 
+                          class="sorting-down-dir__icon"
+                          src="img/svg/icon-down-dir.svg" 
+                          width="11"
+                          height="10"
+                          alt="Стрелка вверх"
+                          aria-label="Отсортировать товары по убыванию"
+                        >
+                      </button>
+                    </div>
                   </div>
                   <div class="card-product">
                     <div class="card-product__row">
@@ -972,7 +976,7 @@
         <!-- END PERFORATORS -->
 
         <!-- INFO -->
-        <div class="info">
+        <div class="info container">
           <h3 class="info__title">
               ПАРА СЛОВ О ПЕРФОРАТОРАХ
           </h3>
@@ -989,208 +993,208 @@
       </main>
       <!-- END MAIN -->
 
-     <!-- FOOTER -->
-     <footer class="main-footer">
-        <div class="main-footer__top">
-          <div class="container">
-            <div  class="main-footer__top--logo">
-              <a 
-                class="footer-logo"
-                href="index.html"
-                aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
-                >
-                <img 
-                  class="footer-logo__img" 
-                  src="img/svg/logo-technomart.svg"
-                  width="138"
-                  height="23"
-                  alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
+      <!-- FOOTER -->
+      <footer class="main-footer">
+          <div class="main-footer__top">
+            <div class="container">
+              <div  class="main-footer__top--logo">
+                <a 
+                  class="footer-logo"
+                  href="index.html"
+                  aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
                   >
-              </a>
-
-              <!-- FOOTER NAVIGATION -->
-              <nav class="footer-navigation-top">
-                <ul class="footer-navigation-top__list">
-                    <li class="footer-navigation-top__item">
-                      <a 
-                        class="footer-navigation-top__link"
-                        href="company.html"
-                        aria-label="Перейти на страницу с информацией о компании ТЕХНОМАРТ"
-                        >
-                        Компания
-                      </a>
-                    </li>
-                    <li class="footer-navigation-top__item">
-                      <a 
-                        class="footer-navigation-top__link"
-                        href="news.html"
-                        aria-label="Перейти на новостную страницу сайта"                        
-                        >
-                        Новости
-                      </a>
-                    </li>
-                    <li class="footer-navigation-top__item">
-                      <a 
-                        class="footer-navigation-top__link"
-                        href="catalog.html"
-                        aria-label="Перейти в каталог товаров"                        
-                        >
-                        Каталог
-                      </a>
-                    </li>
-                    <li class="footer-navigation-top__item">
-                      <a 
-                        class="footer-navigation-top__link"
-                        href="delivery.html"
-                        aria-label="Перейти на страницу с описанием условий доставки товаров"
-                        >
-                        Доставка
-                      </a>
-                    </li>
-                    <li class="footer-navigation-top__item">
-                      <a 
-                        class="footer-navigation-top__link"
-                        href="contacts.html"
-                        aria-label="Перейти на страницу с контактной информацией"
-                        >
-                        Контакты
-                      </a>
-                    </li>
-                </ul>
-              </nav>
-              <!-- END FOOTER NAVIGATION -->
-            </div>
-
-            <div  class="main-footer__top--address">       
-              <address class="footer-address">
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                  <br>
-                  <a
-                class="footer-tel"
-                href="tel:+78125550555"
-                title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
-                aria-label="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
-                >
-                  +7 (812) 555-05-55
-                </a>
-              </address>
-
-              <!-- PRODUCT CATEGORY NAVIGATION -->
-              <nav class="footer-navigation-bottom">
-                <ul class="footer-navigation-bottom__list">
-                    <li class="footer-navigation-bottom__item">
-                      <a 
-                        class="footer-navigation-bottom__link"
-                        href="materials.html"
-                        aria-label="Перейти на страницу с товарами в категории 'Материалы'"
-                        >
-                        Материалы
-                      </a>
-                    </li>
-                    <li class="footer-navigation-bottom__item">
-                      <a 
-                        class="footer-navigation-bottom__link"
-                        href="equipment.html"
-                        aria-label="Перейти на страницу с товарами в категории 'Техника'"
-                        >
-                        Техника
-                      </a>
-                    </li>
-                    <li class="footer-navigation-bottom__item">
-                      <a 
-                        class="footer-navigation-bottom__link"
-                        href="tools.html"
-                        aria-label="Перейти на страницу с товарами в категории 'Инструмент'"
-                        >
-                        Инструмент
-                      </a>
-                    </li>
-                    <li class="footer-navigation-bottom__item">
-                      <a 
-                        class="footer-navigation-bottom__link"
-                        href="offers.html"
-                        aria-label="Перейти на страницу со спецпредложениями"
-                        >
-                        Спецпредложения
-                      </a>
-                    </li>
-                  </ul>
-              </nav>
-              <!-- END PRODUCT CATEGORY NAVIGATION -->
-
-            </div>
-          </div>
-        </div>
-        <div class="main-footer__bottom">
-          <div class="container">
-            <p class="main-footer__copyright--left">
-                &#169; 2010–2019 Компания «Техномарт»
-                <br>
-                Все права защищены
-            </p>
-            <ul>
-              <li>
-                <a 
-                class="social_button social_button--vk"
-                href="https://vk.com/"
-                aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ Вконтакте"
-                target="_blank"
-                >
-                  Вконтакте
-                </a>
-              </li>
-              <li>
-                <a 
-                class="social_button social_button--fb"
-                href="https://www.facebook.com/"
-                aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ на Фейсбук"
-                target="_blank"
-                >
-                  Фейсбук
-                </a>
-              </li>
-              <li>
-                <a 
-                class="social_button social_button--insta"
-                href="https://www.instagram.com/"
-                aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ в Инстаграм"
-                target="_blank"
-                >
-                  Инстаграм
-                </a>
-              </li>
-            </ul>
-            <div class="main-footer__copyright--right">
-              <p class="footer-feedback">
-                  Обратная связь:
-                  <br>
-                  <a
-                  class="feedback__link"
-                  href="mailto:mail@htmlacademy.ru"
-                  title="Написать"
-                  aria-label="Написать на mail@htmlacademy.ru"
-                  >
-                  mail@htmlacademy.ru
-                </a>
-                  
-              </p>              
-              <p class="developed">
-                  Разработано —
-                  <br>
-                  <a 
-                    class="developed__link"
-                    href="https://htmlacademy.ru/intensive/htmlcss"
-                    target="_blank"
-                    aria-label="Перейти на веб-сайт разработчиков"
+                  <img 
+                    class="footer-logo__img" 
+                    src="img/svg/logo-technomart.svg"
+                    width="138"
+                    height="23"
+                    alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
                     >
-                      htmlacademy.ru
+                </a>
+  
+                <!-- FOOTER NAVIGATION -->
+                <nav class="footer-navigation-top">
+                  <ul class="footer-navigation-top__list">
+                      <li class="footer-navigation-top__item">
+                        <a 
+                          class="footer-navigation-top__link"
+                          href="company.html"
+                          aria-label="Перейти на страницу с информацией о компании ТЕХНОМАРТ"
+                          >
+                          Компания
+                        </a>
+                      </li>
+                      <li class="footer-navigation-top__item">
+                        <a 
+                          class="footer-navigation-top__link"
+                          href="news.html"
+                          aria-label="Перейти на новостную страницу сайта"                        
+                          >
+                          Новости
+                        </a>
+                      </li>
+                      <li class="footer-navigation-top__item">
+                        <a 
+                          class="footer-navigation-top__link"
+                          href="catalog.html"
+                          aria-label="Перейти в каталог товаров"                        
+                          >
+                          Каталог
+                        </a>
+                      </li>
+                      <li class="footer-navigation-top__item">
+                        <a 
+                          class="footer-navigation-top__link"
+                          href="delivery.html"
+                          aria-label="Перейти на страницу с описанием условий доставки товаров"
+                          >
+                          Доставка
+                        </a>
+                      </li>
+                      <li class="footer-navigation-top__item">
+                        <a 
+                          class="footer-navigation-top__link"
+                          href="contacts.html"
+                          aria-label="Перейти на страницу с контактной информацией"
+                          >
+                          Контакты
+                        </a>
+                      </li>
+                  </ul>
+                </nav>
+                <!-- END FOOTER NAVIGATION -->
+              </div>
+  
+              <div  class="main-footer__top--address">       
+                <address class="footer-address">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    <br>
+                    <a
+                  class="footer-tel"
+                  href="tel:+78125550555"
+                  title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
+                  aria-label="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
+                  >
+                    +7 (812) 555-05-55
                   </a>
-              </p>
+                </address>
+  
+                <!-- PRODUCT CATEGORY NAVIGATION -->
+                <nav class="footer-navigation-bottom">
+                  <ul class="footer-navigation-bottom__list">
+                      <li class="footer-navigation-bottom__item">
+                        <a 
+                          class="footer-navigation-bottom__link"
+                          href="materials.html"
+                          aria-label="Перейти на страницу с товарами в категории 'Материалы'"
+                          >
+                          Материалы
+                        </a>
+                      </li>
+                      <li class="footer-navigation-bottom__item">
+                        <a 
+                          class="footer-navigation-bottom__link"
+                          href="equipment.html"
+                          aria-label="Перейти на страницу с товарами в категории 'Техника'"
+                          >
+                          Техника
+                        </a>
+                      </li>
+                      <li class="footer-navigation-bottom__item">
+                        <a 
+                          class="footer-navigation-bottom__link"
+                          href="tools.html"
+                          aria-label="Перейти на страницу с товарами в категории 'Инструмент'"
+                          >
+                          Инструмент
+                        </a>
+                      </li>
+                      <li class="footer-navigation-bottom__item">
+                        <a 
+                          class="footer-navigation-bottom__link"
+                          href="offers.html"
+                          aria-label="Перейти на страницу со спецпредложениями"
+                          >
+                          Спецпредложения
+                        </a>
+                      </li>
+                    </ul>
+                </nav>
+                <!-- END PRODUCT CATEGORY NAVIGATION -->
+  
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
-      <!-- END FOOTER -->
+          <div class="main-footer__bottom">
+            <div class="container main-footer__bottom-container">
+              <p class="main-footer__copyright--left">
+                  &#169; 2010–2019 Компания «Техномарт»
+                  <br>
+                  Все права защищены
+              </p>
+              <ul class="social_list">
+                <li>
+                  <a 
+                  class="social_button"
+                  href="https://vk.com/"
+                  aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ Вконтакте"
+                  target="_blank"
+                  >
+                    Вконтакте
+                  </a>
+                </li>
+                <li>
+                  <a 
+                  class="social_button"
+                  href="https://www.facebook.com/"
+                  aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ на Фейсбук"
+                  target="_blank"
+                  >
+                    Фейсбук
+                  </a>
+                </li>
+                <li>
+                  <a 
+                  class="social_button"
+                  href="https://www.instagram.com/"
+                  aria-label="Перейти на страницу интернет-магазина ТЕХНОМАРТ в Инстаграм"
+                  target="_blank"
+                  >
+                    Инстаграм
+                  </a>
+                </li>
+              </ul>
+              <div class="main-footer__copyright--right">
+                <p class="footer-feedback">
+                    Обратная связь:
+                    <br>
+                    <a
+                    class="feedback__link"
+                    href="mailto:mail@htmlacademy.ru"
+                    title="Написать"
+                    aria-label="Написать на mail@htmlacademy.ru"
+                    >
+                    mail@htmlacademy.ru
+                  </a>
+                    
+                </p>              
+                <p class="developed">
+                    Разработано —
+                    <br>
+                    <a 
+                      class="developed__link"
+                      href="https://htmlacademy.ru/intensive/htmlcss"
+                      target="_blank"
+                      aria-label="Перейти на веб-сайт разработчиков"
+                      >
+                        htmlacademy.ru
+                    </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- END FOOTER -->
     </div>
   </body>
 </html>

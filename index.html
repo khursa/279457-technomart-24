@@ -164,79 +164,82 @@
           </div>
 
         <!-- NAVIGATION -->
-        <nav class="main-navigation">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="index.html"
-                aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
-              >
-              Главная
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="catalog.html"
-                aria-label="Переход на страницу с информацией о компании ТЕХНОМАРТ"
-              >
-              Компания
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="catalog.html"
-                aria-label="Переход на страницу каталога товаров"
-              >
-              Каталог
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="news.html"
-                aria-label="Переход на новостную страницу компании ТЕХНОМАРТ "
-              >
-              Новости
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="offers.html"
-                aria-label="Переход на страницу со спецпредложениями"
-              >
-              Спецпредложения
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="delivery.html"
-                aria-label="Переход на страницу с описанием условий доставки"
-              >
-              Доставка
-              </a>
-            </li>
-            <li class="main-navigation__item">
-              <a 
-                class="main-navigation__link"
-                href="contacts.html"
-                aria-label="Переход на страницу с контактной информацией"
-              >
-              Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="container">       
+          <nav class="main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="index.html"
+                  aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
+                >
+                Главная
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="catalog.html"
+                  aria-label="Переход на страницу с информацией о компании ТЕХНОМАРТ"
+                >
+                Компания
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="catalog.html"
+                  aria-label="Переход на страницу каталога товаров"
+                >
+                Каталог
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="news.html"
+                  aria-label="Переход на новостную страницу компании ТЕХНОМАРТ "
+                >
+                Новости
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="offers.html"
+                  aria-label="Переход на страницу со спецпредложениями"
+                >
+                Спецпредложения
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="delivery.html"
+                  aria-label="Переход на страницу с описанием условий доставки"
+                >
+                Доставка
+                </a>
+              </li>
+              <li class="main-navigation__item">
+                <a 
+                  class="main-navigation__link"
+                  href="contacts.html"
+                  aria-label="Переход на страницу с контактной информацией"
+                >
+                Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+ 
         <!-- END NAVIGATION -->   
       </div>     
       <!-- END BANNER -->
 
       <!-- PROMO BLOCK -->
-      <section class="promo">
+      <section class="promo container">
         <div class="promo__row">
           <div class="promo__card promo__card--materials">
             <span class="new-product">new</span>
@@ -361,14 +364,16 @@
               </button>
             </div>
             <div class="promo-slider__link-wrap">
-              <a 
-                class="promo-slider__link"
-                href="catalog.html"
-                aria-label="Переход на страницу каталога товаров ТЕХНОМАРТ"              
-                >
-                ОТКРЫТЬ КАТАЛОГ
-              </a>
-              <ul>
+              <div class="promo-slider__link--wrap">
+                <a 
+                  class="promo-slider__link"
+                  href="catalog.html"
+                  aria-label="Переход на страницу каталога товаров ТЕХНОМАРТ"              
+                  >
+                  ОТКРЫТЬ КАТАЛОГ
+                </a>
+              </div>
+              <ul class="wrap-slider-radiobutton">
                 <li>
                   <input 
                     type="radio"
@@ -446,18 +451,20 @@
       <!-- END PROMO BLOCK -->
 
       <!-- POPULAR PRODUCTS -->
-      <section class="popular-products">
+      <section class="popular-products container">
         <div class="popular-products__banner">
           <h2 class="popular-products__title">
               Популярные товары:
           </h2>
-          <a
-            class="popular-products__more" 
-            href="popular-products.html"
-            aria-label="Переход на страницу с популярными товарами"              
-            >
-              все поПулярные товары
-          </a>
+          <div>
+            <a
+              class="popular-products__more" 
+              href="popular-products.html"
+              aria-label="Переход на страницу с популярными товарами"              
+              >
+                все поПулярные товары
+            </a>
+          </div>
         </div>
         <div class="popular-products__row">
             <article class="popular-products__cell">
@@ -626,18 +633,20 @@
       <!-- END POPULAR PRODUCTS -->
 
       <!-- POPULAR MANUFACTURERS -->
-      <section class="popular-manufacturers">
+      <section class="popular-manufacturers container">
           <div class="popular-manufacturers__banner">
             <h2 class="popular-manufacturers__title">
                 Популярные производители:
             </h2>
-            <a
-              class="popular-manufacturers__more" 
-              href="popular-manufacturers.html"
-              aria-label="Переход на страницу с перечнем всех производителей перфораторов"                            
-              >
-              Все  производители
-            </a>
+            <div>
+              <a
+                class="popular-manufacturers__more" 
+                href="popular-manufacturers.html"
+                aria-label="Переход на страницу с перечнем всех производителей перфораторов"                            
+                >
+                Все  производители
+              </a>
+            </div>
           </div>
           <div class="popular-manufacturers__block">
             <div class="popular-manufacturers__row">
@@ -784,6 +793,7 @@
               </h2>
               <p class="services__description">
                 Хороший интернет-магазин отличается от плохого не только ценами!
+                <br>
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
               </p>
               <div class="services__selection">
@@ -883,7 +893,7 @@
 
         <!-- ABOUT -->
         <section class="about">
-          <div class="container">
+          <div class="about-container container">
             <div class="company">
               <h2 class="company__title">
                 КОМПАНИЯ «Техномарт»
@@ -1200,13 +1210,13 @@
           </div>
         </div>
         <div class="main-footer__bottom">
-          <div class="container">
+          <div class="container main-footer__bottom-container">
             <p class="main-footer__copyright--left">
                 &#169; 2010–2019 Компания «Техномарт»
                 <br>
                 Все права защищены
             </p>
-            <ul>
+            <ul class="social_list">
               <li>
                 <a 
                 class="social_button"
