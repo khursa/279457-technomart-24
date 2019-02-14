@@ -202,17 +202,32 @@ ul {
 /* BANNER */
 
 .banner {
+    width: 960px;
+    margin: 0 auto;
     color: #000;
 
     background-color: #f3f7f9;
 }
 
 .banner-left__title {
+    padding-top: 20px;
+    padding-left: 53px;
+
     font-size: 16px;
     font-style: italic;
     line-height: 23px;
     font-weight: 400;
     color: #ee3643;
+}
+
+.banner-center__tel {
+    border: 3px solid #ffffff;
+}
+
+.banner-center__images {
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 12px;
 }
 
 .banner-center__link {
@@ -248,12 +263,24 @@ ul {
 
 .banner-right__button,
 .profile {
+    display: flex;
+    justify-content: stretch;
+
     font-size: 21px;
     font-style: normal;
     align-items: center;
+    text-transform: none;
     color: #000000;
     
     background-color: #fff;
+}
+
+.banner-right__icon {
+    margin: 0 14px;
+}
+
+.banner-right__button-login {
+    margin-right: 10px;
 }
 
 .banner-right__button:hover, 
@@ -303,15 +330,23 @@ ul {
 /* NAVIGATION */
 
 .main-navigation {
+    margin-bottom: 60px;
     width: 100%;
+    border-bottom: 5px solid #293449;
 
     font-size: 17px;
     line-height: 17px;
     align-items: center;
 
     background-color: #32425c;
-    
-     
+}
+
+.main-navigation__list {
+    align-items: stretch;
+}
+
+.main-navigation__link {
+    padding: 15.5px;
 }
 
 .main-navigation__link:hover,
