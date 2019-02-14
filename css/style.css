@@ -257,6 +257,12 @@ ul {
     color: #32425c;
 }
 
+.banner-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .banner-right__list {
     display: flex;
     justify-content: space-around;
@@ -289,13 +295,30 @@ ul {
     color: #ee3643;
 }
 
-.logout:hover, 
-.logout:focus {
+.profile-wrap {
+    display: flex;
+    justify-content: stretch;
+
+    max-height: 40px;
+}
+
+.profile img {
+    margin: 14px;
+}
+
+.profile:hover, 
+.profile:focus {
     color: #ee3643;
 }
 
-.logout:active {
+.profile:active {
     opacity: 0.3;
+}
+
+.logout {
+    padding: 10px 10px 10px 10px;
+
+    background-color: #ffffff;
 }
 
 .banner-right__button:active,
