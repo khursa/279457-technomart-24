@@ -101,7 +101,8 @@ ul {
 .main-footer__bottom-container,
 .card-product__row,
 .sorting,
-.sorting-btn-wrap {
+.sorting-btn-wrap,
+.about-container {
     display: flex;
     justify-content: space-between; 
 }
@@ -453,10 +454,14 @@ ul {
 .company__btn,
 .contacts__btn,
 .credit__button {
+    padding: 10px;
+
     font-size: 14px;
     line-height: 18px;
+    text-transform: uppercase;
 
     background-color: #ee3643;
+    border-radius: 2px;
 }
 
 .promo-slider__link:hover,
@@ -598,12 +603,48 @@ ul {
 
 
 /* ABOUT */
+.about-container {
+    padding-bottom: 86px;
+}
 
+.company,
+.contacts {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.contacts__map--wrap {
+    margin-bottom: 35px;
+}
+
+.company__btn {
+    max-width: 220px;
+}
+
+.company__list {
+    margin-left: 35px;
+    /* font-size: 18px; */
+    font-weight: 700;
+    /* line-height: 20px; */
+    color: #000;
+}
+
+.company__item:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #ee3643;
+    left: 0;
+}
 
 
 /* POPAP */
 
-.popular-map,
+.popup-map,
 .popup-write-us,
 .popup-added-product {
     display: none;
