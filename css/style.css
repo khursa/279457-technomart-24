@@ -90,6 +90,7 @@ ul {
 .main-navigation__list,
 .promo__row,
 .promo-slider__btn-box,
+.promo__card-content,
 .popular-products__banner,
 .popular-products__row,
 .popular-manufacturers__banner,
@@ -154,7 +155,6 @@ ul {
 }
 
 .search__field {
-
     border: none;
 
     color: #000;
@@ -387,10 +387,19 @@ ul {
     background-color: #1d2739;
 }
 
+
 /* PROMO BLOCK */
 
 .promo__card {
+    position: relative;
+
     width: 100%;
+    margin: 10px;
+}
+
+.promo__card-content {
+    padding: 0 23px;
+    margin-bottom: 22px;
 }
 
 .promo__card--materials {
@@ -420,6 +429,8 @@ ul {
 }
 
 .card-content__link {
+    padding: 14px 24px;
+
     line-height: 18px;
     text-transform: uppercase;
 
@@ -435,11 +446,21 @@ ul {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.card-content__images-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .promo-slider {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-grow: 2;
+    margin: 10px;
+    padding: 0 25px;
+    max-width: calc(100% - 100px);
    
     background-color: #32425c;
     background-image: url(../img/slider-drill.jpg);
@@ -456,6 +477,13 @@ ul {
 
 .promo-slider__overlay--perforator {
     display: none;
+}
+
+.promo-slider__overlay--drill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .overlay__title {
@@ -527,7 +555,9 @@ ul {
 }
 
 .promo_double-block {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: -1;
 }
 
 /* POPULAR PRODUCTS */
@@ -538,18 +568,41 @@ ul {
     transform: rotate(45deg);
 }
 
+.popular-products {
+    margin-bottom: 20px;
+}
+
 .popular-products__banner,
 .popular-manufacturers__banner {
+    align-items: center;
+    margin-bottom: 20px;
+
     background-color: #f9f5f0;
 }
 
+.popular-products__row {
+    align-items: stretch;
+}
+
 .popular-products__cell,
+.card-product__cell,
 .popular-manufacturers__cell {
+    position: relative;
+
     border: 1px solid #eaeaea;
 
     text-align: center;
 }
 
+.popular-products__cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.card-products__cell:hover,
+.card-products__cell:focus,
 .popular-products__cell:hover,
 .popular-products__cell:focus,
 .popular-manufacturers__cell:hover,
@@ -557,16 +610,44 @@ ul {
     box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
+.card-product__btn-wrap {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .popular-products__title,
 .popular-manufacturers__title {
+    padding-left: 30px;
+
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
     color: #32425c;
 }
 
+.popular-products__more,
+.popular-manufacturers__more {    
+    margin-right: 24px;
+}
+
 
 /* POPULAR MANUFACTURERS */
+
+.popular-manufacturers__row {
+    align-items: stretch;
+    flex-basis: 25%;
+}
+
+.popular-manufacturers__cell {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 10px;
+}
 
 .popular-manufacturers__cell:active {
     box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
@@ -719,6 +800,11 @@ ul {
 }
 
 .filter__title,
+.sorting__title {
+   padding-left: 18px;
+}
+
+.filter__title,
 .wrap-price-range,
 .min-result,
 .max-result,
@@ -785,18 +871,28 @@ ul {
 }
 
 .sorting button {
+    padding: 0 15px;
+
     color: rgba(0, 0, 0, 0.3);
 }
 
+.path__link:hover,
+.path__link:focus,
 .sorting button:hover,
 .sorting button:focus {
     text-decoration: underline;
     color: #000000;
 }
 
+.path__link:active,
 .sorting button:active {
     text-decoration: none;
     color: #ee3643;
+}
+
+.filter__btn {
+    padding: 13px 38px;
+    border-radius: 2px;
 }
 
 .filter__btn,
@@ -804,11 +900,14 @@ ul {
     border: 1px solid #e5e5e5;
 }
 
+.filter__btn:hover,
+.filter__btn:focus,
 .page:hover,
 .page:focus  {
     border: 1px solid #bdc6ca;
 }
 
+.filter__btn:active,
 .page:active  {
     border: 1px solid #ee3643;
 }
@@ -821,7 +920,21 @@ ul {
 
 /* PERFORATORS */
 
+.product-title {
+    padding: 30px;
+}
+
+.path__item {
+    position: relative;
+}
+
+.home__link {
+    padding-right: 20px;
+}
+
 .path__link {
+    padding: 0 20px;
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -829,13 +942,51 @@ ul {
     color: #000000;
 }
 
+.path__link::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 12px;
+    background-image: url(../img/svg/icon-right-small.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 12px;
+}
+
+. path__item:first-child path__link::before {   
+    width: 0;
+    height: 0;
+}
+
+#show-mark {
+    position: absolute;
+    right: 0;
+
+    display: block;
+}
+
 .new-product {
+    display: none;
+
     align-items: center;
     background-color: #ee3643;
 }
 
+.card-product__cell {
+    margin: 10px;
+
+    text-align: center;
+}
+
 .card-product__btn--buy,
 .card-product__btn--to-bookmark {
+    max-width: 135px;
+    min-width: 135px;
+    min-height: 38px;
+    margin: 3.5px auto;
+    
+
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -917,11 +1068,24 @@ ul {
 }
 
 .new-price {
+    max-width: 122px;
+    margin: 0 auto 20px;
+    padding: 13px 20px 12px 35px;
+
     color: #ffffff;
+    
     background-color: #ee3643;
 }
 
+.page-switch {
+    display: flex;
+
+}
+
 .page {
+    margin: 0 5px;
+    padding: 12.5px 15px;
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -937,6 +1101,8 @@ ul {
 }
 
 .info__title {
+    padding-top: 65px;
+
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -944,6 +1110,8 @@ ul {
 }
 
 .info__description {
+    padding-bottom: 75px;
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
