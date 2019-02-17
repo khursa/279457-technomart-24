@@ -588,7 +588,7 @@ ul {
     color: #000000;
 }
 
-.services__description,
+.services__info,
 .company__description,
 .contacts__text,
 .delivery__description,
@@ -609,6 +609,28 @@ ul {
     color: #32425c;
 }
 
+.services__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.services__option {
+    margin: 0;
+    padding: 20px 23px 24px;
+    min-width: 240px;
+
+    text-transform: none;
+    text-align: left;
+}
+
+.warranty,
+.credit,
+.services-img__warranty,
+.services-img__credit {
+    display: none;
+}
+
 .services__option {
     font-size: 21px;
     font-weight: 700;
@@ -619,6 +641,8 @@ ul {
 
 .services__option:hover,
 .services__option:focus {
+    color: #ffffff;
+    
     background-color: #293449;
 }
 
@@ -626,6 +650,10 @@ ul {
     color: #32425c;
 
     background-color: #ffffff;
+}
+
+.services__description {
+    margin-left: 80px;
 }
 
 
@@ -816,8 +844,6 @@ ul {
 
 .card-product__btn--buy img {
     opacity: 0.3;
-    
-     
 }
 
 .card-product__btn--buy img:hover,
@@ -830,8 +856,6 @@ ul {
     color: #ffffff;
 
     background-color: #63a63e;
-    
-     
 }
 
 .card-product__btn--buy:hover,
