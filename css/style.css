@@ -130,10 +130,21 @@ ul {
 }
 
 .main-logo {
+    position: relative;
     padding: 12.5px 50px;
 
     background-color: #ee3643;
     /* box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24); */
+}
+
+.main-logo::after {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    content: '';
+    width: 210px;
+    height: 5px;
+    background-color: #b52933;
 }
 
 .main-logo:hover, 
@@ -395,6 +406,8 @@ ul {
 
     width: 100%;
     margin: 10px;
+
+    overflow: hidden;
 }
 
 .promo__card-content {
@@ -501,6 +514,7 @@ ul {
 .promo-slider__link-wrap {
     display: flex;
     justify-content: start;
+    align-items: center;
 }
 
 .promo-slider__link,
@@ -552,6 +566,11 @@ ul {
 .wrap-slider-radiobutton {
     display: flex;
     justify-content: space-around;
+    margin-left: 76px;
+}
+
+.wrap-slider-radiobutton li input {
+    margin: 0 5px;
 }
 
 .promo_double-block {
@@ -599,6 +618,8 @@ ul {
     flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
+
+    overflow: hidden;
 }
 
 .card-products__cell:hover,
@@ -658,6 +679,10 @@ ul {
 
 .services {
     background-color: #f4f7f9;
+}
+
+.services__title {
+    padding-top: 65px;
 }
 
 .services__title,
@@ -961,14 +986,19 @@ ul {
 
 #show-mark {
     position: absolute;
-    right: 0;
+    top: 5px;
+    right: -30px;
 
     display: block;
+
+    overflow: hidden;
 }
 
 .new-product {
     display: none;
+    width: 100px;
 
+    line-height: 24px;
     align-items: center;
     background-color: #ee3643;
 }
@@ -976,6 +1006,7 @@ ul {
 .card-product__cell {
     margin: 10px;
 
+    overflow: hidden;
     text-align: center;
 }
 
@@ -1075,6 +1106,18 @@ ul {
     color: #ffffff;
     
     background-color: #ee3643;
+}
+
+.new-price:after {
+    position: absolute;
+    bottom: 20px;
+    right: 28.5px;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 21px solid transparent;
+    border-left-color:#ee3643;
+    border-right: 0;
 }
 
 .page-switch {
@@ -1248,7 +1291,29 @@ ul {
 }
 
 .social_button {
+    display: block;
+    margin: 0 2px;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+
+    font-size: 0;
+
     background-color: #212a3a;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+li:nth-child(1) .social_button {
+    background-image: url(../img/svg/icon-vk.svg);
+}
+
+li:nth-child(2) .social_button {
+    background-image: url(../img/svg/icon-fb.svg);
+}
+
+li:nth-child(3) .social_button {
+    background-image: url(../img/svg/icon-insta.svg);
 }
 
 .social_button:hover,
