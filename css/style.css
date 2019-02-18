@@ -215,6 +215,12 @@ ul {
     background-color: #518534;
 }
 
+/* MAIN */
+
+.main {
+    position: relative;
+}
+
 
 /* BANNER */
 
@@ -530,12 +536,15 @@ ul {
     align-items: center;
 }
 
+/* BUTTONS AND LINKS */
+
 .promo-slider__link,
 .popular-products__more,
 .popular-manufacturers__more,
 .company__btn,
 .contacts__btn,
-.credit__button {
+.credit__button,
+.popup-added-product__button {
     padding: 10px;
 
     font-size: 14px;
@@ -557,7 +566,9 @@ ul {
 .contacts__btn:hover,
 .contacts__btn:focus,
 .credit__button:hover,
-.credit__button:focus {
+.credit__button:focus,
+.popup-added-product__button:hover, 
+.popup-added-product__button:focus {
     font-size: 14px;
     line-height: 18px;
 
@@ -571,7 +582,8 @@ ul {
 .popular-manufacturers__more:active,
 .company__btn:active,
 .contacts__btn:active,
-.credit__button:active {
+.credit__button:active,
+.popup-added-product__button:active {
     font-size: 14px;
     line-height: 18px;
 
@@ -822,13 +834,78 @@ ul {
 }
 
 
-/* POPAP */
+/* POPAPS */
 
 .popup-map,
 .popup-write-us,
 .popup-added-product {
-    display: none;
+    /* display: none; */
 }
+
+
+/* POPUP 'ADDED PRODUCT' */
+
+.popup-added-product {
+    position: absolute;
+    top: 340px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 620px;
+    height: 282px;    border-top: 7px solid #ee3643;
+
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+}
+
+.popup-added-product__close-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup-added-product__close-btn-img {
+
+}
+
+.popup-added-product__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.popup-added-product__done-icon {
+
+}
+
+.popup-added-product__text {
+    padding-left: 32px;
+
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.popup-added-product__btns {
+    display: flex;
+    justify-content: center;
+    min-height: 112px;
+
+    background-color: #f1f1f1;
+}
+
+.popup-added-product__button {
+    margin: 36px 10px;
+}
+
+.popup-added-product__button--contitue {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
 
 
 /* FILTER */
@@ -1002,7 +1079,7 @@ ul {
     top: 12px;
 }
 
-. path__item:first-child path__link::before {   
+.path__item:first-child path__link::before {   
     width: 0;
     height: 0;
 }
