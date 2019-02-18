@@ -5,11 +5,6 @@
     transition-duration: inherit;
 }
 
-*:hover,
-*:focus {
-    transition: 0.4s;
-}
-
 html {
     box-sizing: border-box;
     transition-duration: 0.4s;
@@ -150,6 +145,8 @@ ul {
 .main-logo:hover, 
 .main-logo:focus {
     background-color: #ca2c37;
+    
+    transition: 0.4s;
 }
 
 .main-logo:active {
@@ -177,6 +174,8 @@ ul {
 .cart:hover,
 .cart:focus {
     background-color: #212a3a;
+
+    transition: 0.4s;
 }
 
 .search__field:focus {    
@@ -206,6 +205,8 @@ ul {
 .order:hover,
 .order:focus {
     background-color: #5fbb2d;
+    
+    transition: 0.4s;
 }
 
 .order:active {
@@ -258,6 +259,8 @@ ul {
 .banner-center__link:focus {
     text-decoration: underline;
     color: #ca2c37;
+    
+    transition: 0.4s;
 }
 
 .banner-center__link:active {
@@ -308,6 +311,8 @@ ul {
 .banner-right__button:hover, 
 .banner-right__button:focus {
     color: #ee3643;
+    
+    transition: 0.4s;
 }
 
 .profile-wrap {
@@ -324,6 +329,8 @@ ul {
 .profile:hover, 
 .profile:focus {
     color: #ee3643;
+    
+    transition: 0.4s;
 }
 
 .profile:active {
@@ -356,6 +363,8 @@ ul {
 .userlinks__link:hover,
 .userlinks__link:focus {
     color: #ee3643;
+    
+    transition: 0.4s;
 }
 
 .userlinks__link:active {
@@ -391,6 +400,8 @@ ul {
 .main-navigation__link:hover,
 .main-navigation__link:focus {
     background-color: #293449;
+    
+    transition: 0.4s;
 }
 
 .main-navigation__link:active {
@@ -453,6 +464,8 @@ ul {
 .card-content__link:hover,
 .card-content__link:focus {
     background-color: rgba(0, 0, 0, 0.2);
+    
+    transition: 0.4s;
 }
 
 .card-content__link:active {
@@ -549,6 +562,8 @@ ul {
     line-height: 18px;
 
     background-color: #ca2c37;
+    
+    transition: 0.4s;
 }
 
 .promo-slider__link:active,
@@ -629,6 +644,8 @@ ul {
 .popular-manufacturers__cell:hover,
 .popular-manufacturers__cell:focus {       
     box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+    
+    transition: 0.4s;
 }
 
 .card-product__btn-wrap {
@@ -750,6 +767,8 @@ ul {
     color: #ffffff;
     
     background-color: #293449;
+
+    transition: 0.4s;
 }
 
 .services__option--active {
@@ -907,6 +926,8 @@ ul {
 .sorting button:focus {
     text-decoration: underline;
     color: #000000;
+    
+    transition: 0.4s;
 }
 
 .path__link:active,
@@ -930,6 +951,8 @@ ul {
 .page:hover,
 .page:focus  {
     border: 1px solid #bdc6ca;
+    
+    transition: 0.4s;
 }
 
 .filter__btn:active,
@@ -1032,6 +1055,8 @@ ul {
 .card-product__btn--buy img:focus,
 .card-product__btn--buy img:active {
     opacity: 1;
+    
+    transition: 0.4s;
 }
 
 .card-product__btn--buy {
@@ -1043,6 +1068,8 @@ ul {
 .card-product__btn--buy:hover,
 .card-product__btn--buy:focus {
     background-color: #5fbb2d;
+    
+    transition: 0.4s;
 }
 
 .card-product__btn--buy:active {
@@ -1060,6 +1087,8 @@ ul {
 .card-product__btn--to-bookmark:hover,
 .card-product__btn--to-bookmark:focus {
     border: 3px solid #32425c;
+    
+    transition: 0.4s;
 }
 
 .card-product__btn--to-bookmark:active {
@@ -1207,6 +1236,8 @@ ul {
 .footer-navigation-bottom__link:hover,
 .footer-navigation-bottom__link:focus {
     text-decoration: underline;
+    
+    transition: 0.4s;
 }
 
 .footer-navigation-top__link:active,
@@ -1237,6 +1268,8 @@ ul {
 .footer-tel:hover,
 .footer-tel:focus {
     text-decoration: underline;
+    
+    transition: 0.4s;
 }
 
 .footer-tel:focus {
@@ -1277,6 +1310,8 @@ ul {
 .developed:hover,
 .developed:focus {
     text-decoration: underline;
+    
+    transition: 0.4s;
 }
 
 .footer-feedback:active,
@@ -1320,6 +1355,8 @@ li:nth-child(3) .social_button {
 .social_button:focus,
 .social_button:active {
     background-color: #ee3643;
+    
+    transition: 0.4s;
 }
 
 .social_button--vk,
