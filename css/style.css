@@ -984,16 +984,6 @@ ul {
     height: 0;
 }
 
-#show-mark {
-    position: absolute;
-    top: 5px;
-    right: -30px;
-
-    display: block;
-
-    overflow: hidden;
-}
-
 .new-product {
     display: none;
     width: 100px;
@@ -1001,6 +991,16 @@ ul {
     line-height: 24px;
     align-items: center;
     background-color: #ee3643;
+}
+
+.show-mark {
+    position: absolute;
+    top: 5px;
+    right: -30px;
+
+    display: block;
+
+    overflow: hidden;
 }
 
 .card-product__cell {
