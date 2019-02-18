@@ -983,6 +983,7 @@
 
               <!-- POPUP WRITE US -->
               <div class="popup-write-us">
+                <div class="popup-write-us__close-btn-wrap">
                   <button  
                     class="popup-write-us__close-btn"
                     aria-label="Закрыть форму обратной связи"                      
@@ -995,12 +996,13 @@
                     alt="Иконка 'Закрыть' (красный крестик)"
                     >
                   </button>
+                </div>
                   <form 
                     class="feedback-form"
                     action="https://echo.htmlacademy.ru"
                     method="post"
                     >
-                    <fieldset class="fieldset">
+                    <fieldset class="fieldset main-form">
                       <legend class="visually-hidden">
                           Форма обратной связи
                       </legend>
@@ -1062,17 +1064,20 @@
                             placeholder="В свободной форме"
                             minlength="1"
                             maxlength="1000000"
+                            rows="10"
                             required
                             aria-label="Поле для ввода текста письма"
                             >
                           </textarea>
                         </div>
-                        <button 
-                          class="feedback-form__btn"
-                          aria-label="Отправить форму обратной связи"
-                          >
-                            ОТПРАВИТЬ
-                        </button>
+                        <div class="feedback-form__btn-wrap">
+                          <button 
+                            class="feedback-form__btn"
+                            aria-label="Отправить форму обратной связи"
+                            >
+                              ОТПРАВИТЬ
+                          </button>
+                        </div>
                       </div>
                     </fieldset>
                    </form>
