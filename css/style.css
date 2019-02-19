@@ -418,6 +418,16 @@ ul {
 
 /* PROMO BLOCK */
 
+.promo {
+    margin: 0;
+}
+
+.promo__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .promo__card {
     position: relative;
 
@@ -647,7 +657,7 @@ ul {
 .popular-products__cell {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: stretch;
 
     overflow: hidden;
@@ -662,6 +672,19 @@ ul {
     box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
     
     transition: 0.4s;
+}
+
+.popular-manufacturers__link,
+.popular-manufacturers__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-manufacturers__link {
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .card-product__btn-wrap {
@@ -1318,6 +1341,9 @@ ul {
 }
 
 .card-product__cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 10px;
 
     overflow: hidden;
