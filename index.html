@@ -623,7 +623,7 @@
                         </button>
                       </div>
                     </div>
-                    <h2 class="card-product__title">
+                    <h2 class="card-product__title card-product__title--without-old-price">
                       Перфоратор BOSCH
                       <br>
                       BFG 2000
@@ -1018,7 +1018,7 @@
                               placeholder="Имя Фамилия"
                               maxlength="50"
                               minlength="2"
-                              aria-label=""
+                              aria-label="Поле для ввода имени пользователя"
                               required
                               onClick={this.changeInputUserName.bind(this)
                               >
@@ -1040,7 +1040,7 @@
                               maxlength="1000"
                               minlength="3"
                               required
-                              aria-label=""
+                              aria-label="Поле для ввода email пользователя"
                               onClick={this.changeInputUserEmail.bind(this)
                               >
                           </div>
