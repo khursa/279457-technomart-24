@@ -2,12 +2,10 @@
 
 *, *::before, *::after {
     box-sizing: inherit;
-    transition-duration: inherit;
 }
 
 html {
     box-sizing: border-box;
-    transition-duration: 0.4s;
 }
 
 body {
@@ -190,11 +188,13 @@ ul {
 
 .main-header__block--right {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .bookmark,
 .cart,
 .order {
+    word-wrap: normal;
     padding: 12.5px 20px;
 }
 
@@ -858,9 +858,7 @@ ul {
     flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
-    width: 620px; 
-    padding-left: 20px;
-    padding-right: 20px;
+    min-width: 620px; 
     border-top: 7px solid #ee3643;
 
     color: #000000;
@@ -882,6 +880,19 @@ ul {
 
 .user-data {
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+}
+
+.user-data__label {
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.textarea-wrap .user-data__label {
+    padding-left: 20px;
 }
 
 .user-data__name,
@@ -895,7 +906,97 @@ ul {
 .feedback-form__user-name,
 .feedback-form__user-email,
 .user-letter {
+    padding-left: 14px;
+
     border-radius: 4px;
+}
+
+
+/* PLACEHOLDER */
+
+.feedback-form__user-name::-webkit-input-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.feedback-form__user-name::-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.feedback-form__user-name:-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.feedback-form__user-name:-ms-input-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 14px;
+    color: #a9a9a9;
+}
+
+.feedback-form__user-email::-webkit-input-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.feedback-form__user-email::-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.feedback-form__user-email:-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.feedback-form__user-email:-ms-input-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.user-letter::-webkit-input-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 30px;
+    color: #a9a9a9;
+}
+
+.user-letter::-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 30px;
+    color: #a9a9a9;
+}
+
+.user-letter:-moz-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 30px;
+    color: #a9a9a9;
+}
+
+.user-letter:-ms-input-placeholder {
+    font-family: "PT Sans", Arial, sans-serif;    
+    font-size: 13px;
+    line-height: 30px;
+    color: #a9a9a9;
 }
 
 .user-data__name {
@@ -911,15 +1012,23 @@ ul {
 }
 
 .user-letter {
-    resize:none;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    resize: none;
 }
 
 .feedback-form__btn {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: stretch;
+    min-width: 100%;
 
     text-align: center;
+}
+
+.feedback-form__btn span {
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -984,9 +1093,15 @@ ul {
 .feedback-form__btn-wrap {
     display: flex;
     justify-content: center;
+    width: calc(100% + 24px);
     padding: 20px 120px;
 
     background-color: #f1f1f1;
+}
+
+.feedback-form__btn-wrap {
+    margin-left: -10px;
+    margin-bottom: -7px;
 }
 
 .popup-added-product__button {
