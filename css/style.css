@@ -600,12 +600,6 @@ ul {
     margin: 0 auto;
 }
 
-.promo__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .promo__card {
     position: relative;
 
@@ -673,10 +667,14 @@ ul {
     align-items: center;
 }
 
+.promo__doble-row {
+    margin-right: 20px;
+}
+
 .promo-slider {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-grow: 2;
     margin: 10px;
     padding: 0 25px;
@@ -711,11 +709,16 @@ ul {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+
+    margin: 27px 0 0;
 }
 
 .overlay__text {
     font-size: 18px;
     line-height: 24px;
+
+    margin: 0;
+    padding-top: 8px;
 }
 
 .promo-slider__link-wrap {
@@ -735,7 +738,7 @@ ul {
 .popup-added-product__button,
 .feedback-form__btn {
     padding: 10px;
-    padding-bottom: 24px;
+    padding-bottom: 14px;
 
     font-size: 14px;
     line-height: 18px;
@@ -743,6 +746,10 @@ ul {
 
     background-color: #ee3643;
     border-radius: 2px;
+}
+
+.promo-slider__link {
+    padding: 14px 45px;
 }
 
 .promo-slider__link:hover,
@@ -796,13 +803,14 @@ ul {
 .promo_double-block {
     display: flex;
     flex-direction: column;
-    flex-grow: -1;
+    justify-content: space-between;
+    flex-grow: 0.15;
 }
 
 /* POPULAR PRODUCTS */
 
 .popular-products__more {
-    padding-bottom: 14px;
+    padding: 14px 55px;
 }
 
 .new-product {
@@ -918,7 +926,7 @@ ul {
 /* POPULAR MANUFACTURERS */
 
 .popular-manufacturers__more {
-    padding-bottom: 14px;
+    padding: 14px 69px;
 }
 
 .popular-manufacturers__row {
@@ -1608,13 +1616,16 @@ ul {
 
     border-radius: 2px;
     box-shadow:  0 -7px 0 0 #ffffff,
-                 -15px -7px 0 0 #ffffff;
+                 25px 0 0 0 #ffffff,
+                 -26px -7px 0 0 #ffffff;
 }
 
 .card-product__btn--buy {
     box-shadow: inset 0 -3px 0 #367315,
                 0 -10px 0 0 #ffffff,
-                -15px 0 0 0 #ffffff;
+                25px 0 0 0 #ffffff,
+                25px 10px 0 0 #ffffff,
+                -25px 0 0 0 #ffffff;
 }
 
 .card-product__btn--buy::before {
