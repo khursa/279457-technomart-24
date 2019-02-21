@@ -462,7 +462,11 @@ ul {
     position: relative;
 
     margin-right: 10px;
-    padding-left: 40px;
+    padding: 7px 27px 7px 40px;
+}
+
+.banner-right__button-registration {
+    padding: 7px 25px;
 }
 
 .banner-right__button:hover, 
@@ -474,7 +478,7 @@ ul {
 
 .banner-right__button-login:before {
     position: absolute;
-    top: 13px;
+    top: 16px;
     left: 14px;
 
     content: '';
@@ -798,13 +802,14 @@ ul {
 
 .wrap-slider-radiobutton li input {
     margin: 0 5px;
+
 }
 
 .promo_double-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 0.15;
+    flex-grow: 0.19;
 }
 
 /* POPULAR PRODUCTS */
@@ -1074,20 +1079,23 @@ ul {
 }
 
 .company__list {
+    position: relative;
+
     margin-left: 35px;
-    /* font-size: 18px; */
     font-weight: 700;
-    /* line-height: 20px; */
     color: #000;
 }
 
 .company__item:before {
     position: absolute;
+    left: -30px;
+    transform: translateY(15px);
+
     content: '';
     width: 25px;
     height: 2px;
+
     background-color: #ee3643;
-    left: 0;
 }
 
 /* POPUP WRITE US */
