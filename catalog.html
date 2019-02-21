@@ -12,90 +12,61 @@
     <div class="main-wrap">
       <!-- HEADER -->
       <header class="main-header">
-        <div class="container main-header__container">
-          <div class="main-header__block--left">
-              <a 
-                class="main-logo"
-                href="index.html"
-                aria-label="Перейти главную страницу веб-сайта ТЕХНОМАРТ"
-                >
-                <img 
-                  class="main-logo__img" 
-                  src="img/svg/logo-technomart.svg"
-                  width="110"
-                  height="18"
-                  alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
+          <div class="container main-header__container">
+            <div class="main-header__block--left">
+                <a 
+                  class="main-logo"
+                  href="index.html"
+                  aria-label="Обновить главную страницу веб-сайта ТЕХНОМАРТ"
                   >
-              </a>
-              <div class="search">
-                <label for="search">
                   <img 
-                    class="search__icon"
-                    src="img/svg/icon-search.svg"                   
-                    width="17"
-                    height="17"
-                    alt="Иконка поиска (увеличительное стекло)"
+                    class="main-logo__img" 
+                    src="img/svg/logo-technomart.svg"
+                    width="110"
+                    height="18"
+                    alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
                     >
-                </label>
-                <input 
-                  class="search__field"
-                  id="search" 
-                  placeholder="Поиск:"
-                  type="search" 
-                  aria-label="Поиск по сайту ТЕХНОМАРТ" 
-                  >
+                </a>
+                <div class="search">
+                  <input 
+                    class="search__field"
+                    id="search" 
+                    placeholder="Поиск:"
+                    type="search" 
+                    aria-label="Поиск по сайту ТЕХНОМАРТ"
+                    >
+                </div>
               </div>
-            </div>
-            <div class="main-header__block--right">
-              <a 
-                class="bookmark"
-                href="bookmark.html"
-                aria-label="Переход на страницу с закладками на сайте ТЕХНОМАРТ"
+              <div class="main-header__block--right">
+                <a 
+                  class="bookmark"
+                  href="bookmark.html"
+                  aria-label="Переход на страницу с закладками на сайте ТЕХНОМАРТ"
+                  >
+                  <span class="bookmark__text">
+                      Закладки: 0 
+                  </span>
+                </a>
+                <a 
+                  class="cart"
+                  href="cart.html"
+                  aria-label="Переход в корзину интернет-магазина ТЕХНОМАРТ"                
+                  >
+                  <span class="cart__text">
+                      Корзина: 0 
+                  </span>
+                </a>
+                <a 
+                class="order"
+                href="order.html"
+                aria-label="Переход на страницу оформления заказа"              
                 >
-                <img 
-                class="bookmark__icon"
-                src="img/svg/icon-bookmark.svg" 
-                width="14"
-                height="16"
-                alt="Иконка закладок (книжная закладка)"
-                >
-                <span class="bookmark__text">
-                    Закладки:
-                </span>
-                <span class="bookmark__count">
-                  0
-                </span>
+                Оформить заказ
               </a>
-              <a 
-                class="cart"
-                href="cart.html"
-                aria-label="Переход в корзину интернет-магазина ТЕХНОМАРТ" 
-                >
-                <img 
-                class="cart__icon"
-                src="img/svg/icon-cart.svg" 
-                width="15"
-                height="15"
-                alt="Иконка корзины (корзина для покупок)"
-                >
-                <span class="cart__text">
-                    Корзина: 
-                </span>
-                <span class="cart__count">
-                  0
-                </span>
-              </a>
-              <a 
-              class="order"
-              href="order.html"
-              aria-label="Добавить товар в корзину!" 
-              >
-              Оформить заказ
-            </a>
-            </div>
-        </div>
-      </header>
-      <!-- END HEADER -->
+              </div>
+          </div>
+        </header>
+        <!-- END HEADER -->
 
       <!-- MAIN -->
       <!-- BANNER -->
@@ -142,12 +113,6 @@
                   href="profile.html"
                   aria-label="Перейти на страницу Вашей учетной записи"
                   >
-                  <img 
-                    src="img/svg/icon-user.svg" 
-                    width="20"
-                    height="18"
-                    alt="Иконка пользователя"
-                    >
                   Равшан Джамшутович
                 </a>
                 <a
@@ -156,7 +121,8 @@
                   aria-label="Выйти с учетной записи"
                   >
                   <img 
-                    src="img/svg/icon-logout.svg" 
+                    class="logout__image"
+                    src="img/icon-logout.png" 
                     width="20"
                     height="17"
                     alt="Иконка 'выйти' (стрелка вправо)"
@@ -545,12 +511,6 @@
                                 class="card-product__btn--buy"
                                 aria-label="Переход на страницу оформления заказа"              
                                 >
-                                <img 
-                                  src="img/svg/icon-cart.svg" 
-                                  width="15"
-                                  height="15"
-                                  alt="Иконка корзины для покупок"
-                                  >
                                 Купить
                               </button>
                               <button 
@@ -588,12 +548,6 @@
                                   class="card-product__btn--buy"
                                   aria-label="Переход на страницу оформления заказа"              
                                   >
-                                  <img 
-                                    src="img/svg/icon-cart.svg" 
-                                    width="15"
-                                    height="15"
-                                    alt="Иконка корзины для покупок"
-                                    >
                                   Купить
                                 </button>
                                 <button 
@@ -631,12 +585,6 @@
                                     class="card-product__btn--buy"
                                     aria-label="Переход на страницу оформления заказа"              
                                     >
-                                    <img 
-                                      src="img/svg/icon-cart.svg" 
-                                      width="15"
-                                      height="15"
-                                      alt="Иконка корзины для покупок"
-                                      >
                                     Купить
                                   </button>
                                   <button 
@@ -673,12 +621,6 @@
                                     class="card-product__btn--buy"
                                     aria-label="Переход на страницу оформления заказа"              
                                     >
-                                    <img 
-                                      src="img/svg/icon-cart.svg" 
-                                      width="15"
-                                      height="15"
-                                      alt="Иконка корзины для покупок"
-                                      >
                                     Купить
                                   </button>
                                   <button 
@@ -716,12 +658,6 @@
                                       class="card-product__btn--buy"
                                       aria-label="Переход на страницу оформления заказа"              
                                       >
-                                      <img 
-                                        src="img/svg/icon-cart.svg" 
-                                        width="15"
-                                        height="15"
-                                        alt="Иконка корзины для покупок"
-                                        >
                                       Купить
                                     </button>
                                     <button 
@@ -759,12 +695,6 @@
                                         class="card-product__btn--buy"
                                         aria-label="Переход на страницу оформления заказа"              
                                         >
-                                        <img 
-                                          src="img/svg/icon-cart.svg" 
-                                          width="15"
-                                          height="15"
-                                          alt="Иконка корзины для покупок"
-                                          >
                                         Купить
                                       </button>
                                       <button 
@@ -801,12 +731,6 @@
                                         class="card-product__btn--buy"
                                         aria-label="Переход на страницу оформления заказа"              
                                         >
-                                        <img 
-                                          src="img/svg/icon-cart.svg" 
-                                          width="15"
-                                          height="15"
-                                          alt="Иконка корзины для покупок"
-                                          >
                                         Купить
                                       </button>
                                       <button 
@@ -844,12 +768,6 @@
                                           class="card-product__btn--buy"
                                           aria-label="Переход на страницу оформления заказа"              
                                           >
-                                          <img 
-                                            src="img/svg/icon-cart.svg" 
-                                            width="15"
-                                            height="15"
-                                            alt="Иконка корзины для покупок"
-                                            >
                                           Купить
                                         </button>
                                         <button 
@@ -887,12 +805,6 @@
                                             class="card-product__btn--buy"
                                             aria-label="Переход на страницу оформления заказа"              
                                             >
-                                            <img 
-                                              src="img/svg/icon-cart.svg" 
-                                              width="15"
-                                              height="15"
-                                              alt="Иконка корзины для покупок"
-                                              >
                                             Купить
                                           </button>
                                           <button 
