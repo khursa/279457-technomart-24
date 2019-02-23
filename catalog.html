@@ -326,74 +326,84 @@
                       </legend>
                       <ul>
                         <li>
-                            <input 
-                            type="checkbox"
-                            name="bosch"
-                            checked
-                            id="filter-bosch"
-                            aria-label="Выбрать производителя BOSCH"
-                            >
-                            <label 
+                          <label 
                             class="manufacturer__name"
                             for="filter-bosch"
                             >
-                            BOSCH
+                            <input 
+                              class="visually-hidden"
+                              type="checkbox"
+                              name="bosch"
+                              checked
+                              id="filter-bosch"
+                              aria-label="Выбрать производителя BOSCH"
+                              >
+                              <span class="checkbox-indicator"></span>
+                              BOSCH
                           </label>
                         </li>
                         <li>
-                          <input 
-                            type="checkbox"
-                            name="interskol"
-                            id="filter-interskol"
-                            aria-label="Выбрать производителя ИНТЕРСКОЛ"
-                            >
-                            <label 
+                          <label 
                             class="manufacturer__name"
                             for="filter-interskol"
                             >
+                            <input 
+                              class="visually-hidden"
+                              type="checkbox"
+                              name="interskol"
+                              id="filter-interskol"
+                              aria-label="Выбрать производителя ИНТЕРСКОЛ"
+                              >
+                              <span class="checkbox-indicator"></span>
                             ИНТЕРСКОЛ
                           </label>
                         </li>
                         <li>
-                          <input 
-                            type="checkbox"
-                            name="makita"
-                            checked
-                            aria-label="Выбрать производителя MAKIta"
-                            id="filter-makita"
-                            >
-                            <label 
+                          <label 
                             class="manufacturer__name"
                             for="filter-makita"
                             >
+                            <input
+                              class="visually-hidden" 
+                              type="checkbox"
+                              name="makita"
+                              checked
+                              aria-label="Выбрать производителя MAKIta"
+                              id="filter-makita"
+                              >
+                              <span class="checkbox-indicator"></span>
                             MAKIta
                           </label>
                         </li>
                         <li>
-                          <input 
-                            type="checkbox"
-                            name="dewalt"
-                            id="filter-dewalt"
-                            aria-label="Выбрать производителя Dewalt"
-                            >
-                            <label 
+                          <label 
                             class="manufacturer__name"
                             for="filter-dewalt"
                             >
+                            <input 
+                              class="visually-hidden"
+                              type="checkbox"
+                              name="dewalt"
+                              id="filter-dewalt"
+                              aria-label="Выбрать производителя Dewalt"
+                              >
+                              <span class="checkbox-indicator"></span>
                               Dewalt
                           </label>
                         </li>
                         <li>
-                          <input 
-                            type="checkbox"
-                            name="hitachi"
-                            id="filter-hitachi"
-                            aria-label="Выбрать производителя Hitachi"                            
-                            >
                             <label 
                               class="manufacturer__name"                              
                               for="filter-hitachi"
                               >
+                              <input disabled
+                                class="visually-hidden"
+                                type="checkbox"
+                                name="hitachi"
+                                id="filter-hitachi"
+                                aria-label="Выбрать производителя Hitachi"                            
+                                >
+                                <span class="checkbox-indicator"></span>
                               Hitachi
                             </label>
                         </li>
@@ -406,33 +416,37 @@
                         </legend>
                         <ul>
                           <li>
-                              <input 
-                              type="radio"
-                              name="power-of-perforator"                              
-                              id="filter-rechargeable"
-                              value="rechargeable"
-                              checked
-                              aria-label="Выбрать перфораторы с аккумуляторным питанием"                                                          
-                              >
-                              <label 
+                            <label 
                               class="power__type"
                               for="filter-rechargeable"
                               >
+                              <input 
+                                class="visually-hidden"
+                                type="radio"
+                                name="power-of-perforator"                              
+                                id="filter-rechargeable"
+                                value="rechargeable"
+                                checked
+                                aria-label="Выбрать перфораторы с аккумуляторным питанием"                                                          
+                                >
+                                <span class="radio-indicator"></span>
                               Аккумуляторные
                             </label>
                           </li>
                           <li>
-                            <input 
-                              type="radio"
-                              name="power-of-perforator"
-                              id="filter-network"
-                              value="network"
-                            aria-label="Выбрать перфораторы с питанием от электросети"                                                          
-                              >
-                              <label 
+                            <label 
                               class="power__type"
                               for="filter-network"
                               >
+                              <input 
+                                class="visually-hidden"
+                                type="radio"
+                                name="power-of-perforator"
+                                id="filter-network"
+                                value="network"
+                                aria-label="Выбрать перфораторы с питанием от электросети"                                                          
+                                >
+                                <span class="radio-indicator"></span>
                               Сетевые
                             </label>
                           </li>
