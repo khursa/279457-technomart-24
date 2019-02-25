@@ -136,7 +136,7 @@ ul {
 }
 
 .main-logo {
-    padding: 12.5px 50px;
+    padding: 12.5px 50px 1px;
     box-sizing: content-box;
 
     background-color: #ee3643;
@@ -166,7 +166,7 @@ ul {
 }
 
 .search__field {
-    min-width: 270px;
+    min-width: 260px;
     padding-left: 48px;
     border: none;
 
@@ -350,7 +350,7 @@ ul {
 .banner-left__title::before {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
 
     content: '';
     width: 210px;
@@ -940,7 +940,7 @@ ul {
 }
 
 .card-product__title--without-old-price {
-    padding-bottom: 80px;
+    padding-bottom: 65px;
 }
 
 
@@ -1178,10 +1178,7 @@ ul {
     align-items: stretch;
 }
 
-.contacts__map {
-    min-width: 110%;
-    margin-left: -5px;
-}
+
 
 /* POPUP WRITE US */
 
@@ -1511,12 +1508,20 @@ ul {
 }
 
 .filter__title,
-.wrap-price-range,
+.price-range,
 .min-result,
 .max-result,
 .between-output,
 .sorting {
     color: #000000;
+
+    background-color: #f7f3ec;
+}
+
+.wrap-price-range {
+    margin: 0 -10px 20px;
+    padding: 30px 20px;
+    min-width: 100%;
 
     background-color: #f7f3ec;
 }
@@ -1543,17 +1548,32 @@ ul {
     color: #000000;
 }
 
+.price-result {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
 .min-result,
 .max-result {
+    min-width: 47%;
+    padding: 10.5px 0;
+
     font-size: 17px;
     line-height: 18px;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .between-output {
+    padding: 10.5px 5px;
+
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    color: #444444;
+
+    background-color: transparent;
 }
 
 .manufacturer__name,
