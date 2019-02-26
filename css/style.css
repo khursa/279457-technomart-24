@@ -1577,6 +1577,7 @@ ul {
 }
 
 .wrap-price-range {
+    position: relative;
     margin: 0 -10px 20px;
     padding: 30px 20px;
     min-width: 100%;
@@ -1597,6 +1598,48 @@ ul {
     cursor: pointer;
   }
 
+  .price-range::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+
+  .price-range::-moz-range-thumb {
+    cursor: pointer;
+  }
+
+  .price-range::-ms-thumb {
+    cursor: pointer;
+  }
+
+  .range-indicator {
+      position: absolute;
+      transform: translateY(50%);
+
+      width: 20px;
+      height: 22px;
+
+      border-radius: 50%;
+      background-color: #ffffff;
+  }
+
+  .range-indicator__wrap-center {
+      position: relative;
+    }
+
+
+.range-indicator__wrap-center::after {
+    position: absolute;
+    left: 8px;
+    top: 9px;
+
+    content: '';
+    width: 4px;
+    height: 4px;
+
+    border-radius: 1px;
+    background-color: #ababab;
+    }
+      
 .filter__name {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
