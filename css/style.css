@@ -886,7 +886,13 @@ ul {
 }
 
 .new-product {
+    display: none;
+    align-items: center;
+    width: 100px;
+
     text-align: center;
+    line-height: 24px;
+    background-color: #ee3643;
 
     transform: rotate(45deg);
 }
@@ -1860,20 +1866,11 @@ ul {
     height: 0;
 }
 
-.new-product {
-    display: none;
-    width: 100px;
-
-    line-height: 24px;
-    align-items: center;
-    background-color: #ee3643;
-}
-
 .show-mark {
     position: absolute;
     top: 5px;
     right: -30px;
-    z-index: 30;
+    z-index: 10;
 
     display: block;
 
@@ -2294,4 +2291,15 @@ li:nth-child(3) .social_button {
 .feedback__link,
 .developed__link {
     color: #ffda96;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+     width: 100%;
+     height: 100%;
+
+     background-color: rgba(0, 0, 0, 0.3);
+     z-index: 25;
 }
