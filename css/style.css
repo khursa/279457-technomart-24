@@ -324,7 +324,7 @@ ul {
     position: relative;
 
     min-width: 100vw;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 
     color: #000;
 
@@ -654,10 +654,13 @@ ul {
 }
 
 .card-content__link {
-    padding: 14px 24px;
+    display: block;
+    min-width: 135px;
+    padding: 14px 0;
 
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
 
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -682,7 +685,7 @@ ul {
 
 .promo__doble-row {
     margin-right: 20px;
-    padding-bottom: 32px;
+    padding-bottom: 43px;
 }
 
 .promo-slider {
@@ -863,20 +866,11 @@ ul {
     background-color: #ee3643; 
 }
 
-
-
-
-
-
-
-
-
-
 .promo_double-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 0.19;
+    flex-grow: 0.06;
 }
 
 /* POPULAR PRODUCTS */
@@ -1004,7 +998,7 @@ ul {
 }
 
 .card-product__title--without-old-price {
-    padding-bottom: 65px;
+    padding-bottom: 30px;
 }
 
 
@@ -1012,6 +1006,11 @@ ul {
 
 .popular-manufacturers__more {
     padding: 14px 69px;
+}
+
+.popular-manufacturers__block {
+    min-width: calc(100% + 10px);
+    margin-left: -5px;
 }
 
 .popular-manufacturers__row {
@@ -1200,6 +1199,7 @@ ul {
 }
 
 .contacts__map--wrap {
+    min-height: 158px;
     margin-top: 35px;
     margin-bottom: 40px;
 }
@@ -1209,6 +1209,10 @@ ul {
 }
 
 .company__list {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 5px;
     position: relative;
 
     margin-left: 35px;
@@ -1218,6 +1222,8 @@ ul {
 
 .company__item {
     padding: 5px 0;
+
+    font-size: 18px;
 }
 
 .company__item:before {
@@ -1234,6 +1240,7 @@ ul {
 
 .contacts__text {
     max-width: 90%;
+    margin-top: 5px;
 }
 
 .contacts__map--wrap {
@@ -1989,6 +1996,8 @@ ul {
 }
 
 .card-product__title {
+    margin: 0 auto 18px;
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -2005,6 +2014,9 @@ ul {
 }
 
 .old-price {
+    margin: 0 auto;
+    padding-bottom: 13px;
+
     text-decoration: line-through;
     color: #999999;
 }

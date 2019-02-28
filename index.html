@@ -9,6 +9,11 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <noscript>
+        <p>
+          Ваш браузер не поддерживает работу со скриптами или их поддержка отключена!
+        </p>
+    </noscript>
     <div class="main-wrap">
       <!-- HEADER -->
       <header class="main-header">
@@ -1243,8 +1248,20 @@
       </footer>
       <!-- END FOOTER -->
 
-      <div class="popup-overlay"></div>
+      <!-- <div class="popup-overlay"></div> -->
 
     </div>
+
+    <!-- SCRPTS -->
+    <script>
+      var PopupWriteUs = document.querySelector(".popup-write-us");
+      var openPopupWriteUs = document.querySelector(".contacts__btn");
+      var closePopupWriteUs = document.querySelector(".popup-write-us__close-btn");
+
+      openPopupWriteUs.addEventListener("click", function (evt) {
+        console.log("lolo");
+      });
+    </script>
+    <!-- END SCRIPTS -->
   </body>
 </html>
