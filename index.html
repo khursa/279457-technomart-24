@@ -1248,18 +1248,30 @@
       </footer>
       <!-- END FOOTER -->
 
-      <!-- <div class="popup-overlay"></div> -->
+      <div class="popup-overlay"></div>
 
     </div>
 
     <!-- SCRPTS -->
     <script>
+      var overlay = document.querySelector(".popup-overlay");
       var PopupWriteUs = document.querySelector(".popup-write-us");
       var openPopupWriteUs = document.querySelector(".contacts__btn");
       var closePopupWriteUs = document.querySelector(".popup-write-us__close-btn");
+      var PopupMap = document.querySelector(".popup-map");
+      var openPopupMap = document.querySelector(".popup-map--wrap");
+      var closePopupMap = document.querySelector(".popup-map__close-btn");
 
       openPopupWriteUs.addEventListener("click", function (evt) {
-        console.log("lolo");
+        evt.preventDefault();
+        overlay.classList.add("dis-flex");
+        PopupWriteUs.classList.add("dis-flex");
+      });
+
+      closePopupWriteUs.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        overlay.classList.remove("dis-flex");
+        PopupWriteUs.classList.remove("dis-flex");
       });
     </script>
     <!-- END SCRIPTS -->
