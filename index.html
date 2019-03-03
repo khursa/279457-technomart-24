@@ -1255,24 +1255,52 @@
     <!-- SCRPTS -->
     <script>
       var overlay = document.querySelector(".popup-overlay");
-      var PopupWriteUs = document.querySelector(".popup-write-us");
+
+      var popupWriteUs = document.querySelector(".popup-write-us");
       var openPopupWriteUs = document.querySelector(".contacts__btn");
       var closePopupWriteUs = document.querySelector(".popup-write-us__close-btn");
-      var PopupMap = document.querySelector(".popup-map");
-      var openPopupMap = document.querySelector(".popup-map--wrap");
+      var nameInputPopupWriteUs = document.querySelector(".feedback-form__user-name");
+      var emailInputPopupWriteUs = document.querySelector(".feedback-form__user-email");
+      var submitPopupWriteUs = document.querySelector(".feedback-form__btn");
+      
+      var popupMap = document.querySelector(".popup-map");
+      var openPopupMap = document.querySelector(".contacts__map--wrap");
       var closePopupMap = document.querySelector(".popup-map__close-btn");
 
       openPopupWriteUs.addEventListener("click", function (evt) {
         evt.preventDefault();
         overlay.classList.add("dis-flex");
-        PopupWriteUs.classList.add("dis-flex");
+        popupWriteUs.classList.add("dis-flex");
+        nameInputPopupWriteUs.focus();
+      });
+
+      submitPopupWriteUs.addEventListener("click", function (evt) {
+        if (!nameInputPopupWriteUs.value || !emailInputPopupWriteUs.value) {
+            evt.preventDefault();
+            console.log("Введите");
+        } else {
+          localStorage.setItem("nameInputPopupWriteUs", nameInputPopupWriteUs.value);
+        }
       });
 
       closePopupWriteUs.addEventListener("click", function (evt) {
         evt.preventDefault();
         overlay.classList.remove("dis-flex");
-        PopupWriteUs.classList.remove("dis-flex");
+        popupWriteUs.classList.remove("dis-flex");
       });
+
+      openPopupMap.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        overlay.classList.add("dis-flex");
+        popupMap.classList.add("dis-flex");
+      });
+
+      closePopupMap.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        overlay.classList.remove("dis-flex");
+        popupMap.classList.remove("dis-flex");
+      });
+
     </script>
     <!-- END SCRIPTS -->
   </body>

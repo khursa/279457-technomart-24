@@ -1153,13 +1153,38 @@
         </footer>
         <!-- END FOOTER -->
 
-      <!-- <div class="popup-overlay"></div> -->
+      <div class="popup-overlay"></div>
 
     </div>
 
-    <!-- SCRIPTS -->
+    <!-- SCRPTS -->
     <script>
+      var cardProduct = document.querySelector(".card-product");
+      var overlay = document.querySelector(".popup-overlay");
       
+      var PopupAddedProduct = document.querySelector(".popup-added-product");
+      var openPopupAddedProduct = cardProduct.querySelector(".card-product__btn--buy");
+      var closePopupAddedProduct = document.querySelector(".popup-added-product__close-button");
+      var contituePopupAddedProduct = document.querySelector(".popup-added-product__button--contitue");
+
+      openPopupAddedProduct.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        overlay.classList.add("dis-flex");
+        PopupAddedProduct.classList.add("dis-flex");
+      });
+
+      closePopupAddedProduct.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        overlay.classList.remove("dis-flex");
+        PopupAddedProduct.classList.remove("dis-flex");
+      });
+
+      contituePopupAddedProduct.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        overlay.classList.remove("dis-flex");
+        PopupAddedProduct.classList.remove("dis-flex");
+      });
+
     </script>
     <!-- END SCRIPTS -->
   </body>
