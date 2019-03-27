@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
                   alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
                   >
               </a>
-              <div class="search">
+              <form class="search">
                 <input 
                   class="search__field"
                   id="search" 
@@ -40,7 +40,7 @@
                   type="search" 
                   aria-label="Поиск по сайту ТЕХНОМАРТ"
                   >
-              </div>
+              </form>
             </div>
             <div class="main-header__block--right">
               <a 
@@ -80,13 +80,13 @@
         <div class="banner">
           <div class="container">
             <div class="banner-left">
-              <h1 class="banner-left__title">
-                  Интернет-магазин
-                  <br>
-                  строительных материалов
-                  <br>
-                  и инструментов для ремонта
-              </h1>
+              <div class="banner-left__title-wrap">
+                <h1 class="banner-left__title">
+                    Интернет-магазин                  
+                    строительных материалов                  
+                    и&nbsp;инструментов&nbsp;для&nbsp;ремонта
+                </h1>
+              </div>
             </div>
             <div class="banner-center">
               <address class="banner-center-content">
@@ -115,20 +115,22 @@
             <div class="banner-right">
               <ul class="banner-right__list">
                 <li class="banner-right__item">
-                  <button 
+                  <a 
+                    href="login.html"
                     class="banner-right__button banner-right__button-login"
                     aria-label="Осуществить вход в личный кабинет сайта ТЕХНОМАРТ"
                     >
                       Войти
-                  </button>
+                </a>
                 </li>
                 <li class="banner-right__item">
-                  <button 
+                  <a 
+                    href="registration.html"
                     class="banner-right__button banner-right__button-registration"
                     aria-label="Зарегистрироваться на сайте ТЕХНОМАРТ"
                     >
                       Регистрация
-                  </button>
+                </a>
                 </li>
               </ul>
             </div>
@@ -227,7 +229,7 @@
                   на любой вкус
                 </a>
               </div>
-              <div class="card-content__images-block">
+              <div class="card-content__images-block card-content__images-block--materials">
                 <img 
                   class="card-content__images"
                   src="img/svg/icon-materials.svg" 
@@ -279,7 +281,7 @@
                   для стройки
                 </a>
               </div>
-              <div class="card-content__images-block">
+              <div class="card-content__images-block card-content__images-block--equipment">
                 <img 
                   class="card-content__images"
                   src="img/svg/icon-equipment.svg" 
@@ -385,7 +387,7 @@
                   </div>
                   <div class="card-content__images-block">
                     <img 
-                      class="card-content__images"
+                      class="card-content__images card-content__images--discount"
                       src="img/svg/icon-discount.svg" 
                       width="59"
                       height="72"
@@ -411,7 +413,7 @@
                   </div>
                   <div class="card-content__images-block">
                     <img 
-                      class="card-content__images"
+                      class="card-content__images card-content__images--delivery"
                       src="img/svg/icon-delivery.svg"
                       width="78" 
                       height="63" 
@@ -437,7 +439,7 @@
               href="popular-products.html"
               aria-label="Переход на страницу с популярными товарами"              
               >
-                все поПулярные товары
+                все популярные товары
             </a>
           </div>
         </div>
@@ -453,23 +455,25 @@
                   alt="Перфоратор BOSCH"
                 >
                 <div class="card-product__btn-wrap">
-                    <button 
+                    <a 
+                      href="cart.html"
                       class="card-product__btn--buy"
                       aria-label="Переход на страницу оформления заказа"              
                       >
                       Купить
-                    </button>
-                    <button 
+                    </a>
+                    <a 
+                      href="bookmark.html"
                       class="card-product__btn--to-bookmark"
                       aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
                       >
                         В закладки
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <h2 class="card-product__title">
                   Перфоратор BOSCH
-                  <br>
+                  
                   BFG 9000
                 </h2>
                 <p class="old-price">
@@ -490,23 +494,24 @@
                     alt="Перфоратор BOSCH"
                   >
                   <div class="card-product__btn-wrap">
-                      <button 
+                      <a 
+                        href="cart.html"
                         class="card-product__btn--buy"
                         aria-label="Переход на страницу оформления заказа"              
                         >
                         Купить
-                      </button>
-                      <button 
+                      </a>
+                      <a 
+                        href="bookmark.html"
                         class="card-product__btn--to-bookmark"
                         aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
                         >
                           В закладки
-                      </button>
+                      </a>
                     </div>
                   </div>
                   <h2 class="card-product__title">
-                    Перфоратор BOSCH
-                    <br>
+                    Перфоратор BOSCH                    
                     BFG 3000
                   </h2>
                   <p class="old-price">
@@ -527,23 +532,24 @@
                       alt="Перфоратор BOSCH"
                     >
                     <div class="card-product__btn-wrap">
-                        <button 
+                        <a
+                          href="cart.html" 
                           class="card-product__btn--buy"
                           aria-label="Переход на страницу оформления заказа"              
                           >
                           Купить
-                        </button>
-                        <button 
+                        </a>
+                        <a
+                          href="bookmark.html" 
                           class="card-product__btn--to-bookmark"
                           aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
                           >
                             В закладки
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <h2 class="card-product__title">
-                      Перфоратор BOSCH
-                      <br>
+                      Перфоратор BOSCH                      
                       BFG 6000
                     </h2>
                     <p class="old-price">
@@ -557,18 +563,20 @@
                   <span class="new-product show-mark">new</span>
                   <div class="popular-products__btn">
                     <div class="card-product__btn-wrap">
-                        <button 
+                        <a
+                          href="cart.html"   
                           class="card-product__btn--buy"
                           aria-label="Переход на страницу оформления заказа"              
                           >
                           Купить
-                        </button>
-                        <button 
+                        </a>
+                        <a
+                          href="bookmark.html" 
                           class="card-product__btn--to-bookmark"
                           aria-label="Переход на страницу закладок веб-сайта ТЕХНОМАРТ"              
                           >
                             В закладки
-                        </button>
+                        </a>
                       </div>
                     </div>                    
                     <img 
@@ -579,8 +587,7 @@
                       alt="Перфоратор BOSCH"
                     >
                     <h2 class="card-product__title card-product__title--without-old-price">
-                      Перфоратор BOSCH
-                      <br>
+                      Перфоратор BOSCH                      
                       BFG 2000
                     </h2>
                     <p class="new-price">
@@ -616,7 +623,7 @@
                   aria-label="Все перфораторы производителя BOSCH"              
                   >
                   <img 
-                    class="popular-manufacturers__images"
+                    class="popular-manufacturers__images popular-manufacturers__images--bosch"
                     src="img/manufacturers-bosch.jpg" 
                     width="126"
                     height="37"
@@ -632,7 +639,7 @@
                   aria-label="Все перфораторы производителя Makita"              
                   >
                   <img 
-                    class="popular-manufacturers__images"
+                    class="popular-manufacturers__images popular-manufacturers__images--makita"
                     src="img/manufacturers-makita.jpg" 
                     width="123"
                     height="40"
@@ -664,7 +671,7 @@
                   aria-label="Все перфораторы производителя Интерскол"              
                   >
                   <img 
-                    class="popular-manufacturers__images"
+                    class="popular-manufacturers__images popular-manufacturers__images--interskol"
                     src="img/manufacturers-interskol.jpg" 
                     width="200"
                     height="88"
@@ -682,7 +689,7 @@
                 aria-label="Все перфораторы производителя HITACHI"              
                 >
                 <img 
-                  class="popular-manufacturers__images"
+                  class="popular-manufacturers__images popular-manufacturers__images--hitachi"
                   src="img/manufacturers-hitachi.jpg" 
                   width="169"
                   height="31"
@@ -698,7 +705,7 @@
                 aria-label="Все перфораторы производителя LG"              
                 >
                 <img 
-                  class="popular-manufacturers__images"
+                  class="popular-manufacturers__images popular-manufacturers__images--lg"
                   src="img/manufacturers-lg.jpg" 
                   width="121"
                   height="73"
@@ -714,7 +721,7 @@
                 aria-label="Все перфораторы производителя AEG"              
                 >
                 <img 
-                  class="popular-manufacturers__images"
+                  class="popular-manufacturers__images popular-manufacturers__images--aeg"
                   src="img/manufacturers-aeg.jpg" 
                   width="151"
                   height="96"
@@ -730,7 +737,7 @@
                 aria-label="Все перфораторы производителя Metabo"              
                 >
                 <img 
-                  class="popular-manufacturers__images"
+                  class="popular-manufacturers__images popular-manufacturers__images--metabo"
                   src="img/manufacturers-metabo.jpg" 
                   width="204"
                   height="69"
@@ -751,8 +758,7 @@
                   Сервисы
               </h2>
               <p class="services__info">
-                Хороший интернет-магазин отличается от плохого не только ценами!
-                <br>
+                Хороший интернет-магазин отличается от плохого не только ценами!                
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
               </p>
               <div class="services__selection">
@@ -863,8 +869,8 @@
                 ремонта и строительства не оставит равнодушными 
                 любителей сэкономить на гастарбайтерах.
               </p>
-              <p class="company__description">             
-                Мы можем доставить ваш товар в самые отдаленные точки России!
+              <p class="company__description company__description--second">             
+                Мы&nbsp;можем&nbsp;доставить&nbsp;ваш&nbsp;товар&nbsp;в&nbsp;самые&nbsp;отдаленные&nbsp;точки&nbsp;России!
                 Техномарт работает со многими транспортными компаниями:  
               </p>
               <ul class="company__list">
@@ -878,12 +884,13 @@
                   ЖелДорЭкспедиция
                 </li>
               </ul>
-              <button 
+              <a 
+                href="about.html"
                 class="company__btn"
                 aria-label="Перейти на страницу с информацией о компании ТЕХНОМАРТ"
                 >
                 Подробнее о компании
-              </button>
+            </a>
             </div>
 
             <div class="contacts">
@@ -894,7 +901,8 @@
                 Вы можете забрать товар сами, 
                 заехав в наш офис:
               </p>
-              <button
+              <a
+                href="map.html"
                 class="contacts__map--wrap"
                 aria-label="Открыть карту с расположением на ней компании Техномарт"
                 >
@@ -906,7 +914,7 @@
                   alt="Расположение компании Техномарт на карте по адресу 
                   г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
                 >
-              </button>
+              </a>
 
               <!-- POPUP MAP -->
               <div class="popup-map">
@@ -925,12 +933,13 @@
               </div>
               <!-- END POPUP MAP -->
 
-              <button 
+              <a
+                href="write-us.html" 
                 class="contacts__btn"
                 aria-label="Открыть форму обратной связи"  
                 >
                   Заблудились? НапиШИТЕ НАМ!
-              </button>
+              </a>
 
               <!-- POPUP WRITE US -->
               <div class="popup-write-us">
@@ -975,7 +984,6 @@
                               minlength="2"
                               aria-label="Поле для ввода имени пользователя"
                               required
-                              onClick={this.changeInputUserName.bind(this)
                               >
                           </div>
                           <div class="user-data__email">
@@ -996,7 +1004,6 @@
                               minlength="3"
                               required
                               aria-label="Поле для ввода email пользователя"
-                              onClick={this.changeInputUserEmail.bind(this)
                               >
                           </div>
                       </div>
@@ -1119,14 +1126,14 @@
 
             <div  class="main-footer__top--address">       
               <address class="footer-address">
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8	
                   <br>
                   <a
                 class="footer-tel"
                 href="tel:+78125550555"
                 title="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
                 aria-label="Осуществить вызов в колл-центр интернет-магазина 'ТЕХНОМАРТ'"
-                >
+                >	
                   +7 (812) 555-05-55
                 </a>
               </address>
@@ -1179,11 +1186,12 @@
         </div>
         <div class="main-footer__bottom">
           <div class="container main-footer__bottom-container">
+           <div>
             <p class="main-footer__copyright--left">
-                &#169; 2010–2019 Компания «Техномарт»
-                <br>
-                Все права защищены
+              &#169; 2010–2019 Компания «Техномарт»                
+              Все права защищены
             </p>
+           </div>
             <ul class="social_list">
               <li>
                 <a 
@@ -1218,8 +1226,7 @@
             </ul>
             <div class="main-footer__copyright--right">
               <p class="footer-feedback">
-                  Обратная связь:
-                  <br>
+                  Обратная связь:                  
                   <a
                   class="feedback__link"
                   href="mailto:mail@htmlacademy.ru"
@@ -1231,8 +1238,7 @@
                   
               </p>              
               <p class="developed">
-                  Разработано —
-                  <br>
+                  Разработано —                  
                   <a 
                     class="developed__link"
                     href="https://htmlacademy.ru/intensive/htmlcss"
@@ -1253,55 +1259,7 @@
     </div>
 
     <!-- SCRPTS -->
-    <script>
-      var overlay = document.querySelector(".popup-overlay");
-
-      var popupWriteUs = document.querySelector(".popup-write-us");
-      var openPopupWriteUs = document.querySelector(".contacts__btn");
-      var closePopupWriteUs = document.querySelector(".popup-write-us__close-btn");
-      var nameInputPopupWriteUs = document.querySelector(".feedback-form__user-name");
-      var emailInputPopupWriteUs = document.querySelector(".feedback-form__user-email");
-      var submitPopupWriteUs = document.querySelector(".feedback-form__btn");
-      
-      var popupMap = document.querySelector(".popup-map");
-      var openPopupMap = document.querySelector(".contacts__map--wrap");
-      var closePopupMap = document.querySelector(".popup-map__close-btn");
-
-      openPopupWriteUs.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        overlay.classList.add("dis-flex");
-        popupWriteUs.classList.add("dis-flex");
-        nameInputPopupWriteUs.focus();
-      });
-
-      submitPopupWriteUs.addEventListener("click", function (evt) {
-        if (!nameInputPopupWriteUs.value || !emailInputPopupWriteUs.value) {
-            evt.preventDefault();
-            console.log("Введите");
-        } else {
-          localStorage.setItem("nameInputPopupWriteUs", nameInputPopupWriteUs.value);
-        }
-      });
-
-      closePopupWriteUs.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        overlay.classList.remove("dis-flex");
-        popupWriteUs.classList.remove("dis-flex");
-      });
-
-      openPopupMap.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        overlay.classList.add("dis-flex");
-        popupMap.classList.add("dis-flex");
-      });
-
-      closePopupMap.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        overlay.classList.remove("dis-flex");
-        popupMap.classList.remove("dis-flex");
-      });
-
-    </script>
+    <script src="js/script.js"></script>    
     <!-- END SCRIPTS -->
   </body>
 </html>

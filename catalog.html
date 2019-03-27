@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт - Каталог</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
                     alt="Логотип веб-сайта (Надпись 'ТЕХНОМАРТ')"
                     >
                 </a>
-                <div class="search">
+                <form class="search">
                   <input 
                     class="search__field"
                     id="search" 
@@ -40,7 +40,7 @@
                     type="search" 
                     aria-label="Поиск по сайту ТЕХНОМАРТ"
                     >
-                </div>
+                </form>
               </div>
               <div class="main-header__block--right">
                 <a 
@@ -80,15 +80,13 @@
           <div class="container">
             <div class="banner-left">
               <p class="banner-left__title">
-                  Интернет-магазин
-                  <br>
-                  строительных материалов
-                  <br>
-                  и инструментов для ремонта
+                  Интернет-магазин                  
+                  строительных&nbsp;материалов    
+                  и&nbsp;инструментов&nbsp;для&nbsp;ремонта
               </p>
             </div>
             <div class="banner-center">
-              <address class="banner-center">
+              <address class="banner-center__wrap">
                 <p class="banner-center__tel">
                   <a
                   class="banner-center__link"
@@ -544,8 +542,7 @@
                             </div>
                           </div>
                           <h2 class="card-product__title">
-                            Перфоратор BOSCH
-                            <br>
+                            Перфоратор BOSCH                            
                             BFG 3000
                           </h2>
                           <p class="old-price">
@@ -581,8 +578,7 @@
                               </div>
                             </div>
                             <h2 class="card-product__title">
-                              Перфоратор BOSCH
-                              <br>
+                              Перфоратор BOSCH                              
                               BFG 6000
                             </h2>
                             <p class="old-price">
@@ -618,8 +614,7 @@
                                 </div>
                               </div>
                               <h2 class="card-product__title card-product__title--without-old-price">
-                                Перфоратор BOSCH
-                                <br>
+                                Перфоратор BOSCH                                
                                 BFG 2000
                               </h2>
                               <p class="new-price">
@@ -654,8 +649,7 @@
                                 </div>
                               </div>
                               <h2 class="card-product__title">
-                                Перфоратор BOSCH
-                                <br>
+                                Перфоратор BOSCH                                
                                 BFG 3000
                               </h2>
                               <p class="old-price">
@@ -691,8 +685,7 @@
                                   </div>
                                 </div>
                                 <h2 class="card-product__title">
-                                  Перфоратор BOSCH
-                                  <br>
+                                  Перфоратор BOSCH                                  
                                   BFG 6000
                                 </h2>
                                 <p class="old-price">
@@ -728,8 +721,7 @@
                                     </div>
                                   </div>
                                   <h2 class="card-product__title card-product__title--without-old-price">
-                                    Перфоратор BOSCH
-                                    <br>
+                                    Перфоратор BOSCH                                    
                                     BFG 2000
                                   </h2>
                                   <p class="new-price">
@@ -764,8 +756,7 @@
                                     </div>
                                   </div>
                                   <h2 class="card-product__title">
-                                    Перфоратор BOSCH
-                                    <br>
+                                    Перфоратор BOSCH                                    
                                     BFG 3000
                                   </h2>
                                   <p class="old-price">
@@ -801,8 +792,7 @@
                                       </div>
                                     </div>
                                     <h2 class="card-product__title">
-                                      Перфоратор BOSCH
-                                      <br>
+                                      Перфоратор BOSCH                                      
                                       BFG 6000
                                     </h2>
                                     <p class="old-price">
@@ -838,8 +828,7 @@
                                         </div>
                                       </div>
                                       <h2 class="card-product__title card-product__title--without-old-price">
-                                        Перфоратор BOSCH
-                                        <br>
+                                        Перфоратор BOSCH                                        
                                         BFG 2000
                                       </h2>
                                       <p class="new-price">
@@ -1024,8 +1013,7 @@
   
               <div  class="main-footer__top--address">       
                 <address class="footer-address">
-                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                    <br>
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8                    
                     <a
                   class="footer-tel"
                   href="tel:+78125550555"
@@ -1085,8 +1073,7 @@
           <div class="main-footer__bottom">
             <div class="container main-footer__bottom-container">
               <p class="main-footer__copyright--left">
-                  &#169; 2010–2019 Компания «Техномарт»
-                  <br>
+                  &#169; 2010–2019 Компания «Техномарт»                  
                   Все права защищены
               </p>
               <ul class="social_list">
@@ -1124,7 +1111,7 @@
               <div class="main-footer__copyright--right">
                 <p class="footer-feedback">
                     Обратная связь:
-                    <br>
+                    
                     <a
                     class="feedback__link"
                     href="mailto:mail@htmlacademy.ru"
@@ -1136,8 +1123,7 @@
                     
                 </p>              
                 <p class="developed">
-                    Разработано —
-                    <br>
+                    Разработано —                    
                     <a 
                       class="developed__link"
                       href="https://htmlacademy.ru/intensive/htmlcss"
@@ -1157,36 +1143,7 @@
     </div>
 
     <!-- SCRPTS -->
-    <script>
-      var cardProduct = document.querySelector(".card-product");
-      var overlay = document.querySelector(".popup-overlay");
-      
-      var PopupAddedProduct = document.querySelector(".popup-added-product");
-      var openPopupAddedProduct = cardProduct.querySelector(".card-product__btn--buy");
-      var closePopupAddedProduct = document.querySelector(".popup-added-product__close-button");
-      var contituePopupAddedProduct = document.querySelector(".popup-added-product__button--contitue");
-
-      openPopupAddedProduct.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        overlay.classList.add("dis-flex");
-        PopupAddedProduct.classList.add("dis-flex");
-      });
-
-      closePopupAddedProduct.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        overlay.classList.remove("dis-flex");
-        PopupAddedProduct.classList.remove("dis-flex");
-      });
-
-      contituePopupAddedProduct.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        overlay.classList.remove("dis-flex");
-        PopupAddedProduct.classList.remove("dis-flex");
-      });
-
-    </script>
+    <script src="js/script.js"></script>
     <!-- END SCRIPTS -->
   </body>
 </html>
-
-
